@@ -1,0 +1,402 @@
+{
+  "$schema": "./schemas/transformations.schema.json",
+  "_meta": {
+    "reviewStatus": "APPROVED_EN",
+    "arabicReviewStatus": "APPROVED",
+    "note": "storyUrl is filled with each client's Facebook link when supplied; the \"Read story\" link renders only when it is set. Consent to publish name + body-composition results must be confirmed by the client for every entry."
+  },
+  "items": [
+    {
+      "id": "ahmed-fawzy",
+      "name": {
+        "en": "Ahmed Fawzy",
+        "ar": "أحمد فوزي"
+      },
+      "pronoun": "his",
+      "role": {
+        "en": "Doctor · Living abroad",
+        "ar": "طبيب · مقيم بالخارج"
+      },
+      "challenge": {
+        "en": "Very limited time, around 4 hours of sleep, irregular eating and no gym routine.",
+        "ar": "وقت محدود جدًا، ونوم حوالي 4 ساعات، وأكل غير منتظم، من غير روتين ثابت للتمرين."
+      },
+      "plan": {
+        "en": "Simple structured nutrition, 3 home workouts per week and gradually increasing his daily movement.",
+        "ar": "تنظيم الأكل بطريقة بسيطة، و3 تمارين منزلية أسبوعيًا، مع زيادة الحركة اليومية بالتدريج."
+      },
+      "results": [
+        {
+          "label": {
+            "en": "Weight",
+            "ar": "الوزن"
+          },
+          "value": {
+            "en": "−8 kg",
+            "ar": "−8 كجم"
+          }
+        },
+        {
+          "label": {
+            "en": "Fat",
+            "ar": "الدهون"
+          },
+          "value": {
+            "en": "−5.8 kg",
+            "ar": "−5.8 كجم"
+          }
+        },
+        {
+          "label": {
+            "en": "Body fat",
+            "ar": "نسبة الدهون"
+          },
+          "from": {
+            "en": "24.5%",
+            "ar": "24.5%"
+          },
+          "value": {
+            "en": "19.8%",
+            "ar": "19.8%"
+          }
+        }
+      ],
+      "duration": {
+        "en": "8 weeks",
+        "ar": "8 أسابيع"
+      },
+      "storyUrl": null,
+      "consent": {
+        "granted": true,
+        "recordedOn": "2026-09-29",
+        "source": "Client-approved website copy"
+      },
+      "order": 1
+    },
+    {
+      "id": "a-f",
+      "name": {
+        "en": "A.F",
+        "ar": "أ. ف"
+      },
+      "pronoun": "her",
+      "role": {
+        "en": "Mother of 3",
+        "ar": "أم لثلاثة أطفال"
+      },
+      "challenge": {
+        "en": "Irregular meals, frequent takeout and several previous diets that were difficult to maintain.",
+        "ar": "وجبات غير منتظمة، واعتماد متكرر على الأكل الجاهز، وتجارب سابقة مع أنظمة غذائية كان صعب تستمر عليها."
+      },
+      "plan": {
+        "en": "A flexible nutrition plan built around her normal food, enough protein, simple progressive training and regular progress reviews.",
+        "ar": "تغذية مرنة من الأكل المعتاد، وكمية مناسبة من البروتين، وتمارين بسيطة بتتدرج في مستواها، مع مراجعة التقدم بانتظام."
+      },
+      "results": [
+        {
+          "label": {
+            "en": "Weight",
+            "ar": "الوزن"
+          },
+          "value": {
+            "en": "−10 kg",
+            "ar": "−10 كجم"
+          }
+        },
+        {
+          "label": {
+            "en": "Fat",
+            "ar": "الدهون"
+          },
+          "value": {
+            "en": "−7 kg",
+            "ar": "−7 كجم"
+          }
+        },
+        {
+          "label": {
+            "en": "Body fat",
+            "ar": "نسبة الدهون"
+          },
+          "value": {
+            "en": "−3.5%",
+            "ar": "−3.5 %"
+          }
+        }
+      ],
+      "duration": null,
+      "storyUrl": null,
+      "consent": {
+        "granted": true,
+        "recordedOn": "2026-09-29",
+        "source": "Client-approved website copy"
+      },
+      "order": 2
+    },
+    {
+      "id": "mohamed-tarek",
+      "name": {
+        "en": "Mohamed Tarek",
+        "ar": "محمد طارق"
+      },
+      "pronoun": "his",
+      "role": {
+        "en": "Telecommunications engineer",
+        "ar": "مهندس اتصالات"
+      },
+      "challenge": {
+        "en": "High body fat, particularly around the stomach, with low daily calorie burn despite previous efforts.",
+        "ar": "ارتفاع نسبة الدهون، خصوصًا في منطقة البطن، مع نتائج محدودة رغم محاولاته السابقة."
+      },
+      "plan": {
+        "en": "We structured his nutrition and training, then regularly tracked his progress and adjusted calories, protein, exercise and recovery when needed.",
+        "ar": "تنظيم التغذية والتمرين، ومراجعة التقدم بانتظام، وتعديل السعرات والبروتين والتمارين والتعافي حسب الحاجة."
+      },
+      "results": [
+        {
+          "label": {
+            "en": "Body fat",
+            "ar": "نسبة الدهون"
+          },
+          "from": {
+            "en": "25.5%",
+            "ar": "25.5%"
+          },
+          "value": {
+            "en": "20.2%",
+            "ar": "20.2%"
+          }
+        },
+        {
+          "label": {
+            "en": "Belly fat level",
+            "ar": " الدهون الداخلية"
+          },
+          "from": {
+            "en": "7",
+            "ar": "7"
+          },
+          "value": {
+            "en": "5",
+            "ar": "5"
+          }
+        },
+        {
+          "label": {
+            "en": "Muscle mass",
+            "ar": " العضل"
+          },
+          "value": {
+            "en": "Maintained",
+            "ar": "تم الحفاظ عليها"
+          }
+        }
+      ],
+      "duration": null,
+      "storyUrl": null,
+      "consent": {
+        "granted": true,
+        "recordedOn": "2026-09-29",
+        "source": "Client-approved website copy"
+      },
+      "order": 3
+    },
+    {
+      "id": "d-f",
+      "name": {
+        "en": "D.F.",
+        "ar": "د. ف"
+      },
+      "pronoun": "her",
+      "role": {
+        "en": "Mom of three",
+        "ar": "أم لثلاثة أطفال"
+      },
+      "challenge": {
+        "en": "High overall body fat, particularly around the stomach, with a starting weight of 85.9 kg.",
+        "ar": "ارتفاع نسبة الدهون في الجسم، خصوصًا في منطقة البطن، مع وزن بداية 85.9 كجم."
+      },
+      "plan": {
+        "en": "A personalized calorie and protein target, 4 strength sessions per week, cardio and regular progress tracking.",
+        "ar": "تحديد سعرات وكمية بروتين مناسبة لهدفها، و4 تمارين مقاومة أسبوعيًا، مع الكارديو ومتابعة التقدم بانتظام."
+      },
+      "results": [
+        {
+          "label": {
+            "en": "Weight",
+            "ar": "الوزن"
+          },
+          "value": {
+            "en": "−6 kg",
+            "ar": "−6 كجم"
+          }
+        },
+        {
+          "label": {
+            "en": "Body fat",
+            "ar": "نسبة الدهون"
+          },
+          "value": {
+            "en": "−5%",
+            "ar": "−5 %"
+          }
+        },
+        {
+          "label": {
+            "en": "Belly fat",
+            "ar": "دهون البطن"
+          },
+          "value": {
+            "en": "−3 kg",
+            "ar": "−3 كجم"
+          }
+        }
+      ],
+      "duration": {
+        "en": "1 month",
+        "ar": "شهر واحد"
+      },
+      "storyUrl": null,
+      "consent": {
+        "granted": true,
+        "recordedOn": "2026-09-29",
+        "source": "Client-approved website copy"
+      },
+      "order": 4
+    },
+    {
+      "id": "walid-sayed",
+      "name": {
+        "en": "Walid Sayed",
+        "ar": "وليد سيد"
+      },
+      "pronoun": "his",
+      "role": {
+        "en": "Accountant · Living abroad",
+        "ar": "محاسب · مقيم بالخارج"
+      },
+      "challenge": {
+        "en": "High belly fat and relatively low muscle mass were making it harder to improve his shape and overall fitness.",
+        "ar": "تراكم الدهون حول البطن مع كتلة عضلية منخفضة نسبيًا، وصعوبة في الوصول لشكل الجسم ومستوى اللياقة اللي بيستهدفهم."
+      },
+      "plan": {
+        "en": "A measured nutrition plan, strength and cardio training, with regular progress tracking and adjustments based on his results.",
+        "ar": "تنظيم التغذية، والجمع بين تمارين المقاومة والكارديو، مع مراجعة التقدم وتعديل الخطة حسب النتائج."
+      },
+      "results": [
+        {
+          "label": {
+            "en": "Fat",
+            "ar": "الدهون"
+          },
+          "value": {
+            "en": "−1.6 kg",
+            "ar": "−1.6 كجم"
+          }
+        },
+        {
+          "label": {
+            "en": "Muscle",
+            "ar": "الكتلة العضلية"
+          },
+          "value": {
+            "en": "+1.1 kg",
+            "ar": "+1.1 كجم"
+          }
+        },
+        {
+          "label": {
+            "en": "Body fat",
+            "ar": "نسبة الدهون"
+          },
+          "from": {
+            "en": "25.5%",
+            "ar": "25.5%"
+          },
+          "value": {
+            "en": "23%",
+            "ar": "23%"
+          }
+        }
+      ],
+      "duration": {
+        "en": "10 weeks",
+        "ar": "10 أسابيع"
+      },
+      "storyUrl": null,
+      "consent": {
+        "granted": true,
+        "recordedOn": "2026-09-29",
+        "source": "Client-approved website copy"
+      },
+      "order": 5
+    },
+    {
+      "id": "amal-hussein",
+      "name": {
+        "en": "Amal Hussein",
+        "ar": "أمل حسين"
+      },
+      "pronoun": "her",
+      "role": {
+        "en": "Teacher · Living abroad",
+        "ar": "معلمة · مقيمة بالخارج"
+      },
+      "challenge": {
+        "en": "High body fat, particularly around the stomach, with low muscle mass and a starting weight of 77.7 kg.",
+        "ar": "ارتفاع نسبة الدهون، خصوصًا في منطقة البطن، مع كتلة عضلية منخفضة ووزن بداية 77.7 كجم."
+      },
+      "plan": {
+        "en": "Balanced calorie-controlled nutrition, 3 strength sessions per week and regular cardio focused on improving overall body composition.",
+        "ar": "تغذية متوازنة بسعرات مناسبة، و3 تمارين مقاومة أسبوعيًا، مع كارديو منتظم ومراجعة النتائج لتعديل الخطة عند الحاجة."
+      },
+      "results": [
+        {
+          "label": {
+            "en": "Weight",
+            "ar": "الوزن"
+          },
+          "value": {
+            "en": "−3.3 kg",
+            "ar": "−3.3 كجم"
+          }
+        },
+        {
+          "label": {
+            "en": "Body fat",
+            "ar": "نسبة الدهون"
+          },
+          "from": {
+            "en": "42.6%",
+            "ar": "42.6%"
+          },
+          "value": {
+            "en": "38.7%",
+            "ar": "38.7%"
+          }
+        },
+        {
+          "label": {
+            "en": "Muscle",
+            "ar": "الكتلة العضلية"
+          },
+          "value": {
+            "en": "+0.7 kg",
+            "ar": "+0.7 كجم"
+          }
+        }
+      ],
+      "duration": {
+        "en": "1 month",
+        "ar": "شهر واحد"
+      },
+      "storyUrl": null,
+      "consent": {
+        "granted": true,
+        "recordedOn": "2026-09-29",
+        "source": "Client-approved website copy"
+      },
+      "order": 6
+    }
+  ]
+}

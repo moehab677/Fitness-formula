@@ -1,0 +1,1 @@
+export const headScript = `document.documentElement.classList.add('js');if(location.pathname==='/'){let v='en';try{v=localStorage.getItem('tff-lang')==='ar'?'ar':'en'}catch{}location.replace('/'+v+'/'+location.hash)}`

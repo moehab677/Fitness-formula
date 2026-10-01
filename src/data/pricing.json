@@ -1,0 +1,79 @@
+{
+  "$schema": "./schemas/pricing.schema.json",
+  "_meta": {
+    "description": "Pricing tiers, terms, and guarantee — Constitution §III (Pricing Offer) & §V (Structured data for pricing)",
+    "arabicReviewStatus": "PENDING_HUMAN_REVIEW",
+    "englishReviewStatus": "APPROVED"
+  },
+  "tiers": [
+    {
+      "id": "single-session",
+      "name": {
+        "en": "1-to-1 Fitness Consultation",
+        "ar": "استشارة فردية للياقة والتغذية"
+      },
+      "duration": {
+        "minutes": 45,
+        "label": {
+          "en": "45 minutes",
+          "ar": "45 دقيقة · أونلاين"
+        }
+      },
+      "price": 700,
+      "currency": "EGP",
+      "priceLabel": {
+        "en": "/ session",
+        "ar": "/ جلسة"
+      },
+      "note": null,
+      "highlighted": false,
+      "order": 1
+    },
+    {
+      "id": "four-session-bundle",
+      "name": {
+        "en": "4 sessions",
+        "ar": "4 جلسات"
+      },
+      "duration": {
+        "minutes": 45,
+        "count": 4,
+        "label": {
+          "en": "4 × 45 minutes",
+          "ar": "4 × 45 دقيقة"
+        }
+      },
+      "price": 2000,
+      "currency": "EGP",
+      "priceLabel": null,
+      "note": {
+        "en": "Save 800 EGP",
+        "ar": "وفّر 800 جنيه"
+      },
+      "highlighted": true,
+      "order": 2
+    }
+  ],
+  "terms": {
+    "en": "No subscription. No long-term commitment.",
+    "ar": "من غير اشتراك شهري أو التزام طويل المدى."
+  },
+  "guarantee": {
+    "title": {
+      "en": "100% Money-Back Guarantee",
+      "ar": "ضمان استرداد المبلغ بالكامل"
+    },
+    "description": {
+      "en": "If you don't feel the session was valuable, you get your money back. No questions asked.",
+      "ar": "لو حسّيت إن الاستشارة ماقدّمتش لك قيمة، تقدر تسترد المبلغ بالكامل. من غير ما تحتاج تبرر قرارك."
+    }
+  },
+  "cta": {
+    "label": {
+      "en": "BOOK A SESSION",
+      "ar": "احجز جلسة"
+    },
+    "destination": "booking",
+    "style": "primary"
+  }
+}

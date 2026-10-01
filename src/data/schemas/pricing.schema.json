@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["tiers", "terms", "guarantee", "cta"],
+  "properties": {
+    "tiers": { "type": "array", "minItems": 2, "maxItems": 2 },
+    "cta": {
+      "type": "object",
+      "required": ["destination", "style"],
+      "properties": { "destination": { "const": "booking" }, "style": { "const": "primary" } }
+    }
+  },
+  "additionalProperties": true
+}

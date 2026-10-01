@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "meta",
+    "nav",
+    "cta",
+    "sections",
+    "approach",
+    "currency",
+    "form",
+    "thanks",
+    "footer"
+  ],
+  "properties": {
+    "meta": { "type": "object" },
+    "nav": { "type": "object" },
+    "cta": { "type": "object" },
+    "sections": { "type": "object" },
+    "approach": { "type": "object" },
+    "currency": { "type": "object" },
+    "form": { "type": "object" },
+    "thanks": { "type": "object" },
+    "footer": { "type": "object" }
+  },
+  "additionalProperties": true
+}

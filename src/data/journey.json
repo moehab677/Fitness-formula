@@ -1,0 +1,62 @@
+{
+  "$schema": "./schemas/journey.schema.json",
+  "_meta": {
+    "description": "Client Journey steps — Constitution §III (Client Journey Sequence) & §V (Structured data for journey steps)",
+    "arabicReviewStatus": "PENDING_HUMAN_REVIEW",
+    "englishReviewStatus": "APPROVED"
+  },
+  "steps": [
+    {
+      "id": "free-assessment",
+      "stepNumber": "01",
+      "title": {
+        "en": "Start with a free assessment",
+        "ar": "تقييم مبدئي مجاني"
+      },
+      "description": {
+        "en": "Book a quick call so I can understand your goals, what you're struggling with and where you need support.",
+        "ar": "مكالمة قصيرة أفهم فيها أهدافك، والتحديات الحالية، وإيه اللي محتاج تركيز في المرحلة الجاية."
+      },
+      "order": 1
+    },
+    {
+      "id": "choose-next-step",
+      "stepNumber": "02",
+      "title": {
+        "en": "Identify what matters most",
+        "ar": "نحدد الحل المناسب"
+      },
+      "description": {
+        "en": "If I can help, we'll identify the areas that need the most attention and what we should focus on during your consultation.",
+        "ar": "لو أقدر أساعدك، بنحدد الجوانب اللي محتاجة اهتمام أكبر، وإيه اللي هنركز عليه في الاستشارة."
+      },
+      "order": 2
+    },
+    {
+      "id": "build-plan",
+      "stepNumber": "03",
+      "title": {
+        "en": "Build your plan",
+        "ar": "خطة واضحة"
+      },
+      "description": {
+        "en": "In your 1-to-1 online consultation, we review your training, nutrition, lifestyle and progress, then turn that into a clear, practical plan built around your goals and schedule.",
+        "ar": "في استشارتك الفردية أونلاين، بنراجع التمرين والتغذية وأسلوب حياتك وتقدمك، ونحوّل ده لخطوات عملية تناسب هدفك ووقتك."
+      },
+      "order": 3
+    },
+    {
+      "id": "come-back-when-needed",
+      "stepNumber": "04",
+      "title": {
+        "en": "Come back when you need me",
+        "ar": "ترجع وقت ما تحتاج"
+      },
+      "description": {
+        "en": "No forced monthly subscription. Implement the plan and book another consultation whenever you need a review, adjustment or guidance.",
+        "ar": "ابدأ تطبّق الخطة، واحجز استشارة تانية لما تحتاج مراجعة أو تعديل أو توجيه. من غير اشتراك شهري إلزامي."
+      },
+      "order": 4
+    }
+  ]
+}

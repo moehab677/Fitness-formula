@@ -1,0 +1,52 @@
+[
+  {
+    "index": 1,
+    "id": "hero",
+    "ground": "bg"
+  },
+  {
+    "index": 2,
+    "id": "story",
+    "ground": "bg"
+  },
+  {
+    "index": 3,
+    "id": "approach",
+    "ground": "bg"
+  },
+  {
+    "index": 4,
+    "id": "process",
+    "ground": "bg"
+  },
+  {
+    "index": 5,
+    "id": "offer",
+    "ground": "bg"
+  },
+  {
+    "index": 6,
+    "id": "transformations",
+    "ground": "bg"
+  },
+  {
+    "index": 7,
+    "id": "testimonials",
+    "ground": "bg"
+  },
+  {
+    "index": 8,
+    "id": "faq",
+    "ground": "bg"
+  },
+  {
+    "index": 9,
+    "id": "final-cta",
+    "ground": "bg"
+  },
+  {
+    "index": 10,
+    "id": "footer",
+    "ground": "bg"
+  }
+]

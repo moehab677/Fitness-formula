@@ -1,0 +1,8 @@
+dist/
+dist-ssr/
+public/img/
+src/generated/
+design/stitch/code/
+tests/**/*.png
+test-results/
+.lighthouseci/

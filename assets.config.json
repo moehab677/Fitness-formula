@@ -1,0 +1,70 @@
+{
+  "photoWidths": [640, 960, 1280, 1920],
+  "testimonialWidths": [480, 960],
+  "formats": ["avif", "webp", "jpeg"],
+  "photos": [
+    {
+      "key": "hero",
+      "mobile": {
+        "source": "src/assets/hero.jpg",
+        "crop": "center",
+        "width": 640,
+        "height": 900
+      },
+      "desktop": {
+        "source": "src/assets/hero.jpg",
+        "crop": "center",
+        "width": 1920,
+        "height": 1200
+      },
+      "placeholder": true
+    },
+    {
+      "key": "story",
+      "mobile": {
+        "source": "src/assets/story.jpg",
+        "crop": "center",
+        "width": 640,
+        "height": 900
+      },
+      "desktop": {
+        "source": "src/assets/story.jpg",
+        "crop": "center",
+        "width": 1920,
+        "height": 1200
+      },
+      "placeholder": true
+    },
+    {
+      "key": "process",
+      "mobile": {
+        "source": "src/assets/process.jpg",
+        "crop": "center",
+        "width": 640,
+        "height": 900
+      },
+      "desktop": {
+        "source": "src/assets/process.jpg",
+        "crop": "center",
+        "width": 1920,
+        "height": 1200
+      },
+      "placeholder": true
+    }
+  ],
+  "testimonials": [
+    { "key": "testimonial-1", "source": "src/assets/testimonials/1.jpg" },
+    { "key": "testimonial-2", "source": "src/assets/testimonials/2.jpg" },
+    { "key": "testimonial-3", "source": "src/assets/testimonials/3.jpg" },
+    { "key": "testimonial-4", "source": "src/assets/testimonials/4.jpg" },
+    {
+      "key": "testimonial-5",
+      "source": "src/assets/testimonials/5.jpg",
+      "removeRows": [180, 600]
+    },
+    { "key": "testimonial-6", "source": "src/assets/testimonials/6.jpg" },
+    { "key": "testimonial-7", "source": "src/assets/testimonials/7.jpg" },
+    { "key": "testimonial-8", "source": "src/assets/testimonials/8.jpg" }
+  ],
+  "logo": { "source": "public/logo.png", "grayscale": true, "sizes": [96, 192] }
+}

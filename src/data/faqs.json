@@ -1,0 +1,205 @@
+{
+  "$schema": "./schemas/faqs.schema.json",
+  "_meta": {
+    "reviewStatus": "APPROVED_EN",
+    "arabicReviewStatus": "APPROVED",
+    "note": "Bilingual client-approved FAQ copy."
+  },
+  "items": [
+    {
+      "id": "is-it-right-for-me",
+      "question": {
+        "en": "Is this coaching right for me?",
+        "ar": "هل الخدمة مناسبة ليا؟"
+      },
+      "answer": {
+        "en": "It’s designed for busy people who want to get stronger, improve their body composition, eat better, and feel healthier without making fitness their whole life.\n\nYou don’t need to be experienced, extremely fit, or already following a perfect routine.",
+        "ar": "لو أنت فوق الـ30، ويومك مشغول، وعايز تبني قوة، وتقلّل الدهون أو تحافظ على عضلاتك، وتحسّن أكلك ولياقتك بطريقة تناسب حياتك، فالخدمة مصممة لاحتياجات زي دي.\n\nمش لازم تكون عندك خبرة في التمرين أو ماشي على نظام مثالي. مكالمة التعارف المجانية بتساعدنا نحدد إذا كانت الخدمة مناسبة ليك."
+      },
+      "order": 1,
+      "published": true
+    },
+    {
+      "id": "before-first-consultation",
+      "question": {
+        "en": "What happens before my first consultation?",
+        "ar": "إيه اللي بيحصل قبل أول استشارة؟"
+      },
+      "answer": {
+        "en": "We start with a free 15-minute assessment call. I’ll understand your goals, what you’re currently doing, what you’re struggling with, and whether I can actually help.\n\nIf it makes sense, you can then book your full consultation.",
+        "ar": "بنبدأ بمكالمة تعارف مجانية مدتها 15 دقيقة.\n\nبنتكلم عن هدفك، وروتينك الحالي، والتحديات اللي بتقابلك، ونحدد إذا كنت أقدر أساعدك.\n\nلو الخدمة مناسبة ليك، تقدر بعدها تحجز استشارتك الكاملة."
+      },
+      "order": 2,
+      "published": true
+    },
+    {
+      "id": "during-consultation",
+      "question": {
+        "en": "What happens during the 45-minute consultation?",
+        "ar": "إيه اللي بيحصل في استشارة الـ45 دقيقة؟"
+      },
+      "answer": {
+        "en": "We look at the full picture: your goal, training, nutrition, activity, body composition, recovery, schedule, and current challenges.\n\nThen we identify what matters most and agree on clear, practical actions you can start implementing.",
+        "ar": "بنراجع الصورة الكاملة حسب احتياجك: هدفك، وتمرينك، وأكلك، وحركتك اليومية، ونومك، وطبيعة يومك، وأي بيانات متاحة عن تقدمك.\n\nبعدها بنحدد الأولويات، ونتفق على خطوات عملية وواضحة تقدر تبدأ تطبّقها."
+      },
+      "order": 3,
+      "published": true
+    },
+    {
+      "id": "special-tests",
+      "question": {
+        "en": "Do I need an InBody scan or any special tests?",
+        "ar": "هل لازم أعمل InBody أو تحاليل قبل ما أبدأ؟"
+      },
+      "answer": {
+        "en": "No.\n\nIf you have an InBody scan, body measurements, progress photos, blood tests, smartwatch data, or previous assessments, they can provide useful context, but none of them are required to get started.",
+        "ar": "لا، مش مطلوب تعمل فحوصات مخصوص علشان تبدأ.\n\nلو عندك قياسات سابقة، أو تحليل مكونات الجسم «InBody»، أو صور تقدم، أو بيانات من ساعة ذكية، ممكن نستفيد منها لفهم نقطة البداية.\n\nولو عندك حالة صحية، شاركني توصيات الطبيب المرتبطة بالتمرين أو التغذية. تفسير التحاليل وتشخيص الحالات الطبية بيرجع للمختص."
+      },
+      "order": 4,
+      "published": true
+    },
+    {
+      "id": "what-to-prepare",
+      "question": {
+        "en": "What should I prepare before the session?",
+        "ar": "إيه اللي أجهزه قبل الاستشارة؟"
+      },
+      "answer": {
+        "en": "The more context I have, the more useful the session can be.\n\nIf available, bring:\n\n- Your current weight and measurements\n- Your current training routine\n- An idea of what you normally eat\n- Previous InBody results or progress photos\n- Any injuries, limitations, or relevant medical considerations\n- Your main goal and the biggest thing currently stopping you\n\nYou don’t need to prepare everything perfectly.",
+        "ar": "كل ما أعرف تفاصيل أكتر، الاستشارة هتكون أفيد.\n\nلو متاح، جهّز: \n\n- وزنك وقياساتك الحالية\n- روتين التمرين الحالي\n- فكرة عن أكلك المعتاد\n- نتائج InBody سابقة أو صور تقدم\n- أي إصابات أو قيود أو اعتبارات صحية مهمة\n- هدفك الأساسي وأكبر حاجة معطلاك دلوقتي\n\nمش لازم تجهز كل حاجة بشكل مثالي."
+      },
+      "order": 5,
+      "published": true
+    },
+    {
+      "id": "gym-membership",
+      "question": {
+        "en": "Do I need a gym membership?",
+        "ar": "هل لازم أشترك في جيم؟"
+      },
+      "answer": {
+        "en": "Not necessarily.\n\nYour plan should work around your situation, equipment, schedule, experience, and preferences. That could mean a gym, home training, running, sports, or a combination.",
+        "ar": "مش شرط.\n\nبنختار طريقة التمرين حسب هدفك، وخبرتك، ووقتك، والمعدات المتاحة، والأنشطة اللي بتحبها. ممكن تتمرن في الجيم أو البيت، أو ندمج التمرين مع الجري أو رياضة تانية مناسبة ليك."
+      },
+      "order": 6,
+      "published": true
+    },
+    {
+      "id": "strict-diet",
+      "question": {
+        "en": "Will you give me a strict diet?",
+        "ar": "هل هتدّيني دايت صارم؟"
+      },
+      "answer": {
+        "en": "No.\n\nI focus on helping you understand and control the variables that matter such as calories, protein, food quality, portions, and habits without unnecessarily banning foods or giving you a diet you can’t maintain.",
+        "ar": "لا.\n\nهساعدك تفهم وتضبط العوامل اللي بتأثر على نتيجتك، زي السعرات، والبروتين، وجودة الأكل، والكميات، والعادات اليومية. الهدف إنك تعرف تنظّم أكلك وتختار بوعي، من غير حرمان غير ضروري أو نظام يصعب الاستمرار عليه."
+      },
+      "order": 7,
+      "published": true
+    },
+    {
+      "id": "training-program",
+      "question": {
+        "en": "Will you create a training program for me?",
+        "ar": "هل هتعمل لي برنامج تمرين؟"
+      },
+      "answer": {
+        "en": "If training is part of what you need, yes.\n\nWe can review your current routine, improve exercise selection, volume and intensity, or build a more appropriate structure around your goal and available time.",
+        "ar": "أيوه، لو ده جزء من احتياجك.\n\nخلال الاستشارة، ممكن نراجع برنامجك الحالي، ونعدّل اختيار التمارين وعدد المجموعات وشدة التمرين، أو نبني برنامج مناسب لهدفك ومستواك والوقت المتاح ليك."
+      },
+      "order": 8,
+      "published": true
+    },
+    {
+      "id": "what-is-different",
+      "question": {
+        "en": "What makes the approach different?",
+        "ar": "إيه اللي بيميّز طريقتك؟"
+      },
+      "answer": {
+        "en": "I don’t start with a generic program.\n\nFirst, I understand your baseline. Then I identify the variables most likely to affect your results. Finally, we track how your body and performance respond and adjust accordingly.\n\nThe goal is not to create the “perfect plan.” It’s to create a plan that works, fits your life, and can evolve with you.",
+        "ar": "ببدأ بفهم وضعك الحالي، وبحدد العوامل الأكثر تأثيرًا في نتيجتك، ومنها بنبني الخطة. وبوضح لك إزاي تتابع تقدمك، علشان لما نراجع النتائج في استشارة لاحقة، نعرف إيه اللي شغال وإيه اللي محتاج تعديل.\n\nالهدف خطة واضحة وفعّالة، تناسب حياتك وتقدر تتطور معاك."
+      },
+      "order": 9,
+      "published": true
+    },
+    {
+      "id": "subscription",
+      "question": {
+        "en": "Is this a monthly coaching subscription?",
+        "ar": "هل دي خدمة متابعة باشتراك شهري؟"
+      },
+      "answer": {
+        "en": "No.\n\nThere’s no forced subscription or long-term commitment. Book one consultation, implement what we agree on, and come back whenever you need a review, adjustment, or guidance.\n\nIf you want more regular support, you can also book the 4-session bundle.",
+        "ar": "لا.\n\nتقدر تحجز استشارة واحدة، وتطبّق اللي اتفقنا عليه، وترجع لما تحتاج مراجعة أو تعديل. ولو محتاج متابعة على فترات أقرب، تقدر تختار باقة الـ4 استشارات.\n\nالمراجعات والتعديلات بتتم خلال الاستشارات اللي بتحجزها؛ الخدمة مش متابعة يومية مستمرة."
+      },
+      "order": 10,
+      "published": true
+    },
+    {
+      "id": "how-often",
+      "question": {
+        "en": "How often should I book another session?",
+        "ar": "كل قد إيه أحتاج أحجز استشارة تانية؟"
+      },
+      "answer": {
+        "en": "There’s no fixed schedule.\n\nSome people may benefit from regular check-ins, while others may only need another session when progress stalls, their goal changes, their routine changes, or they need help adjusting the plan.",
+        "ar": "حسب احتياجك، مفيش جدول إلزامي.\n\nممكن تستفيد من مراجعات منتظمة، أو تحتاج ترجع لما تقدمك يتوقف، أو هدفك أو روتينك يتغير، أو تكون محتاج مساعدة في تعديل الخطة. بنقدر نناقش توقيت مناسب للمراجعة، والقرار في النهاية ليك."
+      },
+      "order": 11,
+      "published": true
+    },
+    {
+      "id": "online-or-in-person",
+      "question": {
+        "en": "Is the consultation online or in person?",
+        "ar": "الاستشارة أونلاين ولا حضوري؟"
+      },
+      "answer": {
+        "en": "The consultation is designed to work online, so all you need is a phone or laptop, internet connection, and 45 uninterrupted minutes.\n\nAny documents, photos, measurements, or training information can be shared beforehand if needed.",
+        "ar": "الاستشارة أونلاين.\n\nكل اللي تحتاجه موبايل أو لابتوب، واتصال إنترنت مستقر، ومكان هادي تقدر تخصص فيه 45 دقيقة من غير مقاطعات. ولو فيه قياسات أو صور أو تفاصيل عن تمرينك هتفيد النقاش، ممكن تشاركها قبل الموعد."
+      },
+      "order": 12,
+      "published": true
+    },
+    {
+      "id": "injury-or-condition",
+      "question": {
+        "en": "What if I have an injury or medical condition?",
+        "ar": "لو عندي إصابة أو حالة صحية، أقدر أبدأ؟"
+      },
+      "answer": {
+        "en": "Tell me before the consultation so it can be taken into account.\n\nFitness coaching can help adapt your training and habits around your circumstances, but it doesn’t replace medical diagnosis or treatment. When something requires a doctor, physiotherapist, or dietitian, I’ll recommend getting the appropriate professional input.",
+        "ar": "عرّفني قبل ما نبتدي علشان نحدد إذا كانت الخدمة مناسبة، وهل محتاج ترجع لمختص الأول.\n\nبنراعي حالتك وتوصيات المختص في حدود دور التدريب، لكن الاستشارة مش بديل للتشخيص أو العلاج الطبي أو التأهيل. ولو احتياجك يتطلب طبيب أو أخصائي علاج طبيعي أو تغذية علاجية، هوجّهك للحصول على الدعم المناسب."
+      },
+      "order": 13,
+      "published": true
+    },
+    {
+      "id": "new-to-fitness",
+      "question": {
+        "en": "What if I’m completely new to fitness?",
+        "ar": "لو أنا مبتدئ تمامًا؟"
+      },
+      "answer": {
+        "en": "That’s completely fine.\n\nYou don’t need to understand calories, programming, macros, or gym terminology before starting. Part of my job is to simplify what matters and give you a clear starting point.",
+        "ar": "تقدر تبدأ من غير أي خبرة سابقة.\n\nمش مطلوب تكون فاهم السعرات أو البروتين أو تفاصيل برامج التمرين. جزء من دوري إني أبسّط لك اللي محتاج تعرفه، ونحدد نقطة بداية مناسبة لمستواك."
+      },
+      "order": 14,
+      "published": true
+    },
+    {
+      "id": "not-useful",
+      "question": {
+        "en": "What if I don’t find the session useful?",
+        "ar": "ولو حسّيت إن الاستشارة مش مفيدة؟"
+      },
+      "answer": {
+        "en": "The consultation comes with a 100% money-back guarantee.\n\nIf you genuinely don’t feel the session gave you value, you get your money back. No questions asked.",
+        "ar": "الاستشارة عليها ضمان استرداد المبلغ بالكامل.\n\nلو حسّيت إنها ماقدّمتش لك قيمة، تقدر تطلب استرداد المبلغ، من غير ما تحتاج تبرر قرارك."
+      },
+      "order": 15,
+      "published": true
+    }
+  ]
+}

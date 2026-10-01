@@ -1,0 +1,223 @@
+{
+  "$schema": "./schemas/testimonials.schema.json",
+  "_meta": {
+    "translationsApproved": false,
+    "transcriptionsReviewed": false,
+    "note": "Transcriptions were read from the source screenshots and need a human check. Translations must be written by a person (constitution: no machine translation)."
+  },
+  "items": [
+    {
+      "id": "t-01",
+      "type": "screenshot",
+      "displayName": null,
+      "consent": {
+        "granted": true,
+        "scope": "public website, both languages, image and text",
+        "recordedOn": "2026-09-28"
+      },
+      "sourceLanguage": "ar",
+      "languages": ["ar", "en"],
+      "featured": false,
+      "order": 1,
+      "images": [
+        {
+          "source": "design/stitch/testimonials/1.jpg",
+          "assetKey": "testimonial-1",
+          "alt": {
+            "ar": "رسالة واتساب من عميل عن تقدّمه",
+            "en": "WhatsApp message from a client, in Arabic. English translation below."
+          },
+          "transcription": "تمام يا كوتش الحمدلله\nاه النهاردة الصبح كان ٨٧.٥\nالحمدلله تقريبا نفس إللي كان بيحصل لما بمشي علي منع الاكل، بس المرادي مع حفاظ على العضلات ف اكيد افضل\nشكرًا ليك يا كوتش والله",
+          "translation": { "en": "" }
+        }
+      ]
+    },
+    {
+      "id": "t-02",
+      "type": "screenshot",
+      "displayName": null,
+      "consent": {
+        "granted": true,
+        "scope": "public website, both languages, image and text",
+        "recordedOn": "2026-09-28"
+      },
+      "sourceLanguage": "ar",
+      "languages": ["ar", "en"],
+      "featured": false,
+      "order": 2,
+      "images": [
+        {
+          "source": "design/stitch/testimonials/2.jpg",
+          "assetKey": "testimonial-2",
+          "alt": {
+            "ar": "رسالة واتساب من عميل يشكر الكوتش",
+            "en": "WhatsApp message from a client thanking the coach, in Arabic. English translation below."
+          },
+          "transcription": "حابب بس اقولك حاجة\nحابب اشكرك انك شجعتني انزل الچيم، و النهاردة اكبر دليل اني اخد العربية بعد الشغل و اروح مخصوص الچيم إللي كنت بروحة بس عشان رايحين النادي و بطلع اجرى علي المشاية بس.\nف شكرًا يا كوتش و الله ينور بجد 🙏❤️",
+          "translation": { "en": "" }
+        }
+      ]
+    },
+    {
+      "id": "t-03",
+      "type": "screenshot",
+      "displayName": { "en": "Amal Fawzy", "ar": "Amal Fawzy" },
+      "consent": {
+        "granted": true,
+        "scope": "public website, both languages, image and text",
+        "recordedOn": "2026-09-28"
+      },
+      "sourceLanguage": "en",
+      "languages": ["en", "ar"],
+      "featured": false,
+      "order": 3,
+      "images": [
+        {
+          "source": "design/stitch/testimonials/3.jpg",
+          "assetKey": "testimonial-3",
+          "alt": {
+            "en": "Facebook recommendation from Amal Fawzy, April 13, 2025",
+            "ar": "توصية على فيسبوك من Amal Fawzy باللغة الإنجليزية، والترجمة تحت الصورة"
+          },
+          "transcription": "Mostafa is hands down the best personal fitness coach! He's super motivating, knowledgeable, and truly cares about your progress. Every session is challenging but fun, and the results speak for themselves. Highly recommend!",
+          "translation": { "ar": "" }
+        }
+      ]
+    },
+    {
+      "id": "t-04",
+      "type": "screenshot",
+      "displayName": { "en": "Emad Nabil", "ar": "Emad Nabil" },
+      "consent": {
+        "granted": true,
+        "scope": "public website, both languages, image and text",
+        "recordedOn": "2026-09-28"
+      },
+      "sourceLanguage": "en",
+      "languages": ["en", "ar"],
+      "featured": false,
+      "order": 4,
+      "images": [
+        {
+          "source": "design/stitch/testimonials/4.jpg",
+          "assetKey": "testimonial-4",
+          "alt": {
+            "en": "Facebook recommendation from Emad Nabil, April 1, 2025",
+            "ar": "توصية على فيسبوك من Emad Nabil باللغة الإنجليزية، والترجمة تحت الصورة"
+          },
+          "transcription": "Coach Mostafa approach is scientific and by the numbers. his expertise in data analytics reflects in his design of the workout plan and diet. He's very positive and supportive. 💪💪",
+          "translation": { "ar": "" }
+        }
+      ]
+    },
+    {
+      "id": "t-05",
+      "type": "screenshot",
+      "displayName": null,
+      "consent": {
+        "granted": true,
+        "scope": "public website, both languages, image and text",
+        "recordedOn": "2026-09-28"
+      },
+      "sourceLanguage": "ar",
+      "languages": ["ar", "en"],
+      "featured": false,
+      "order": 5,
+      "images": [
+        {
+          "source": "design/stitch/testimonials/5.jpg",
+          "assetKey": "testimonial-5",
+          "alt": {
+            "ar": "رسالة واتساب من عميلة عن تحسّنها في الجيم",
+            "en": "WhatsApp message from a client about her progress at the gym, in Arabic. English translation below."
+          },
+          "transcription": "المهم إن أنا حاسة بتحسن أكتر من تاريخي كله في الجيم\nأنا عندي اتمرن كل يوم ولا مرتين في اليوم أسهل ليا من إني آكل وجبة واحدة بس تمام ربنا ييسر ويسهلي الصعب",
+          "translation": { "en": "" },
+          "complianceEdits": ["removed-medical-claim"]
+        }
+      ]
+    },
+    {
+      "id": "t-06",
+      "type": "screenshot",
+      "displayName": null,
+      "consent": {
+        "granted": true,
+        "scope": "public website, both languages, image and text",
+        "recordedOn": "2026-09-28"
+      },
+      "sourceLanguage": "ar",
+      "languages": ["ar", "en"],
+      "featured": false,
+      "order": 6,
+      "images": [
+        {
+          "source": "design/stitch/testimonials/6.jpg",
+          "assetKey": "testimonial-6",
+          "alt": {
+            "ar": "رسالة واتساب طويلة من عميلة عن تجربتها في التدريب أونلاين",
+            "en": "Long WhatsApp message from a client about her online coaching experience, in Arabic. English translation below."
+          },
+          "transcription": "السلام عليكم ورحمة الله وبركاته بعتذر جدا عن التأخير في الرد.\n-التمارين كويسة وحسيت بتحسن في ضهري وتقليل الألم وصحتي العامة برغم إنها كانت فترة قصيرة\n-الأكل مش ظابط معايا إنه يكون بشكل نظامي، لسه مش لقياله حل.\n-بشكل شخصي كنت مترددة أسجل في تدريب اونلاين عشان الاوفلاين مكنش فعال + لو كابتن مش بنت. لكن مندمتش على الخطوة دي، التمرين مع حد فاهم مش بيخسس ويتخن وخلاص، بيفرق في جودة الصحة العامة، حد يديك نظام مناسب ليك وللهدف اللي عوزاه مش نظام واحد لكل الناس\nالمشكلة مش فيا ولا فيه جسم عنيد وجسم لا ، البوينت إني ألاقي نظام مناسب ليا لكن الرياضة لكل الناس بكل حالاتهم وأي حد هيلاقي نتيجة لو ماشي صح\nشكرا جدا لحضرتك على المجهود ودايما في تقدم وتوفيق",
+          "translation": { "en": "" },
+          "reviewFlags": [
+            "health-claim: back pain reduction",
+            "negative remark about diet adherence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t-07",
+      "type": "screenshot",
+      "displayName": { "en": "Mohamed Tarek", "ar": "محمد طارق" },
+      "consent": {
+        "granted": true,
+        "scope": "public website, both languages, image and text",
+        "recordedOn": "2026-09-28"
+      },
+      "sourceLanguage": "en",
+      "languages": ["en", "ar"],
+      "featured": false,
+      "order": 7,
+      "images": [
+        {
+          "source": "design/stitch/testimonials/7.jpg",
+          "assetKey": "testimonial-7",
+          "alt": {
+            "en": "Facebook recommendation from Mohamed Tarek, July 2, 2025",
+            "ar": "توصية على فيسبوك من محمد طارق باللغة الإنجليزية، والترجمة تحت الصورة"
+          },
+          "transcription": "I have been working with my C/ Mostafa for nearly two months, and the transformation has been incredible.\nHis expertise in nutrition planning, workout routines, and overall lifestyle management has truly made a difference. He takes a holistic approach, focusing not just on short-term goals but also on sustainable long-term health.\n\nHis knowledge and experience shine through in every plan he creates, tailored to my specific needs. The progress I've made with his guidance is beyond what I imagined.\n\nHighly recommend his coaching to anyone looking to improve their fitness and lifestyle!",
+          "translation": { "ar": "" }
+        }
+      ]
+    },
+    {
+      "id": "t-08",
+      "type": "screenshot",
+      "displayName": { "en": "Shehab Seif", "ar": "Shehab Seif" },
+      "consent": {
+        "granted": true,
+        "scope": "public website, both languages, image and text",
+        "recordedOn": "2026-09-28"
+      },
+      "sourceLanguage": "en",
+      "languages": ["en", "ar"],
+      "featured": false,
+      "order": 8,
+      "images": [
+        {
+          "source": "design/stitch/testimonials/8.jpg",
+          "assetKey": "testimonial-8",
+          "alt": {
+            "en": "Facebook recommendation from Shehab Seif titled “A Life-Changing Experience”, May 1, 2025",
+            "ar": "توصية على فيسبوك من Shehab Seif باللغة الإنجليزية، والترجمة تحت الصورة"
+          },
+          "transcription": "A Life-Changing Experience\n\nI'm 36 years old, and for most of my life, incorporating sports into my routine has been a distant \"I wish to\" something I always thought about but never actually did. After turning 35, it felt almost impossible to start.\n\nCoach Mostafa's first point that \"It is never too late\". His approach changed my entire perspective. He doesn't see sports as something difficult or exclusive; instead, he treats it as a natural part of daily life, like brushing your teeth. The first thing he asked me wasn't about workouts or diets—it was about my life goals and objectives.\n\nNow, after just two months, I already feel a real difference. My posture is better—my back is no longer hunched like a shrimp. I've almost completely cut out unhealthy food, and surprisingly, I don't even crave it anymore. I enjoy food, fruits, and life itself in a way I never did before. I feel better, and I regret the years I spent hesitating to start.",
+          "translation": { "ar": "" }
+        }
+      ]
+    }
+  ]
+}

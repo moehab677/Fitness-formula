@@ -1,0 +1,265 @@
+{
+  "_meta": {
+    "reviewStatus": "APPROVED",
+    "approvedOn": "2026-10-01"
+  },
+  "meta": {
+    "title": "The Fitness Formula | Personal Coaching",
+    "description": "Personalized fitness coaching for busy people, built around your life.",
+    "ogImageAlt": "The Fitness Formula"
+  },
+  "nav": {
+    "skipLink": "Skip to content",
+    "languageName": "English",
+    "switchLabel": "العربية",
+    "logoAlt": "The Fitness Formula",
+    "wordmark": "Fitness Formula",
+    "approach": "Approach",
+    "process": "How it works",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "primaryLabel": "Primary",
+    "story": "story",
+    "offer": "Pricing",
+    "transformations": "Transformations",
+    "codeEn": "EN",
+    "codeAr": "AR"
+  },
+  "cta": {
+    "primaryEyebrow": "Get started",
+    "primary": "Book a Free 15-min Call",
+    "secondaryEyebrow": "Already know what you need?",
+    "secondary": "Book a Session",
+    "newTab": "(opens in a new tab)"
+  },
+  "sections": {
+    "hero": {
+      "label": "The Fitness Formula",
+      "eyebrow": "A System Built Around",
+      "heading": "Your Life.",
+      "body": "I help busy men and women above 30 get stronger, look better, and feel healthier without turning fitness into a full-time job.",
+      "alt": "Coach Mostafa Kheder",
+      "pill": "Online coaching for busy adults 30+",
+      "features": [
+        { "title": "Strength", "detail": "Build a stronger body" },
+        { "title": "Nutrition", "detail": "Practical nutrition that fits your life" },
+        { "title": "Energy", "detail": "Feel healthier and more energized" }
+      ],
+      "stats": [
+        { "label": "Age range", "value": "30+", "detail": "For busy adults" },
+        { "label": "Coaching", "value": "Online", "detail": "Built around your schedule" },
+        { "label": "Approach", "value": "Flexible", "detail": "Small, sustainable changes" },
+        { "label": "Focus", "value": "Consistency", "detail": "Progress you can maintain" }
+      ]
+    },
+    "story": {
+      "label": "My story",
+      "heading": "Consistency beats",
+      "accent": "intensity.",
+      "lead": "I believe fitness can change far more than the way you look. For me, training changed my confidence, energy, productivity, and how I show up in everyday life. But balancing fitness with a demanding career and family taught me something even more important:",
+      "body": [
+        "For me, training changed my confidence, energy, productivity, and how I show up in everyday life. But balancing fitness with a demanding career and family taught me something even more important:",
+        "You don't need extreme diets, endless workouts, or a life built around fitness. I believe in small, sustainable changes that compound over time into real results."
+      ],
+      "highlight": "Consistency beats intensity.",
+      "mission": "That's why I started coaching: to help busy people build a stronger, healthier body in a way that actually fits their life.",
+      "stats" : [
+        { "label": "Years training", "value": "5+ y", "detail": "Training Experience" },
+        { "label": "Years coaching", "value": "40+", "detail": "Clients Coached" },
+        { "label": "Clients coached", "value": "98.2%", "detail": "Client Retention" }
+      ],
+      "credentials": [],
+      "alt": "Coach Mostafa Kheder",
+      "axiomLabel": "A guiding principle",
+      "fieldLog": "Training experience"
+    },
+    "approach": {
+      "label": "Coaching approach",
+      "heading": "Your body gives us data.",
+      "accent": "I use it to build the plan.",
+      "lead": "Measure, plan, act, learn and adjust.",
+      "stepLabel": "Step"
+    },
+    "process": {
+      "label": "How coaching works",
+      "heading": "How coaching works",
+      "accent": "",
+      "lead": "A practical plan built around your goals and schedule.",
+      "alt": "Coach Mostafa Kheder during a session",
+      "tag": "How coaching works",
+      "stepTags": [
+        "15-minute call",
+        "Identify priorities",
+        "45-minute consultation",
+        "On-demand support"
+      ]
+    },
+    "offer": {
+      "label": "Pricing & offer",
+      "heading": "Simple,",
+      "accent": "Flexible Pricing",
+      "bundleHeading": "Want more regular support?",
+      "termsNote": "Book another session only when you need one."
+    },
+    "transformations": {
+      "label": "Transformation stories",
+      "heading": "Real People.",
+      "accent": "Real Progress.",
+      "previousStories": "Previous stories",
+      "nextStories": "Next stories",
+      "carouselLabel": "Transformation stories",
+      "goToStory": "Go to story {n}",
+      "challengeLabel": "The challenge",
+      "planLabel": "Our plan",
+      "resultsLabel": "The results",
+      "readHisStory": "Read his story",
+      "readHerStory": "Read her story"
+    },
+    "results": {
+      "label": "Testimonials",
+      "heading": "What clients",
+      "accent": "say.",
+      "lead": "Real messages and reviews from clients, shared as they sent them.",
+      "screenshotLabel": "Testimonial screenshot {n}",
+      "showText": "Read the message",
+      "translationLabel": "Translation",
+      "translationPending": "English translation pending — to be supplied by the client.",
+      "previous": "Previous testimonial",
+      "next": "Next testimonial",
+      "slideLabel": "Testimonial {n} of {total}",
+      "goTo": "Show testimonial {n}",
+      "carouselLabel": "Client testimonials",
+      "counter": "{pos} / {total}"
+    },
+    "notFor": {
+      "label": "Who This Isn't For",
+      "heading": "I don't work with everyone, and that's intentional.",
+      "lead": "Good coaching works best when there’s a good fit on both sides. I work best with people who are ready to take ownership of their progress, make realistic changes and stay consistent.",
+      "intro": "This approach probably isn't for you if:",
+      "items": [
+        {
+          "title": "You're under 30",
+          "body": [
+            "My coaching is designed primarily for busy adults over 30, where work, family, recovery and limited time often make fitness more complicated.",
+            "If you're younger, this may not be the best fit unless your lifestyle and challenges are similar."
+          ]
+        },
+        {
+          "title": "You're looking for quick fixes or extreme transformations",
+          "body": ["I'm not here to promise unrealistic results in a few weeks."]
+        },
+        {
+          "title": "You want a strict meal plan telling you exactly what to eat",
+          "body": [
+            "The goal is to help you understand your nutrition and make better decisions, not follow a restrictive diet forever."
+          ]
+        },
+        {
+          "title": "You want someone to push you through workouts every day",
+          "body": [
+            "This isn't personal training. I help you build the right training approach, structure and progression so you can train independently."
+          ]
+        }
+      ],
+      "closing": "If that sounds like the kind of approach you're looking for, we'll probably work well together."
+    },
+    "faq": {
+      "label": "Frequently Asked Questions",
+      "heading": "Questions?",
+      "accent": "Here's How It Works."
+    },
+    "finalCta": {
+      "label": "Initiation · System active",
+      "heading": "Ready to calibrate",
+      "accent": "your system?",
+      "reassurance": "Strictly limited coaching seats. Secure your baseline diagnostic today and replace physical exhaustion with athletic longevity.",
+      "formHeading": "Tell me about your goals"
+    },
+    "footer": {
+      "label": "The Fitness Formula",
+      "heading": "Personalized fitness coaching."
+    }
+  },
+  "approach": {
+    "steps": [
+      {
+        "title": "Understand the baseline",
+        "body": [
+          "I look beyond your weight: body composition, activity, nutrition, training history and lifestyle.",
+          "The goal is to understand what's actually driving your current results."
+        ]
+      },
+      {
+        "title": "Control the variables",
+        "body": [
+          "Calories, protein, training volume, intensity and recovery all matter.",
+          "I focus on the variables that matter most for your specific goal, without making fitness unnecessarily complicated."
+        ]
+      },
+      {
+        "title": "Track progress",
+        "body": [
+          "The first plan is never the final plan.",
+          "I track how your body and performance respond, then adjust based on progress, not assumptions."
+        ]
+      }
+    ]
+  },
+  "currency": {
+    "EGP": "EGP"
+  },
+  "form": {
+    "fallbackText": "Prefer to book directly?",
+    "name": "Name",
+    "whatsapp": "WhatsApp number",
+    "goal": "What is your goal?",
+    "struggle": "What has been challenging?",
+    "contactTime": "Best time to contact you",
+    "contactTimes": {
+      "morning": "Morning",
+      "afternoon": "Afternoon",
+      "evening": "Evening",
+      "anytime": "Anytime"
+    },
+    "submit": "Send my details",
+    "sending": "Sending…",
+    "privacyNote": "Your details are used only to respond to your enquiry.",
+    "errors": {
+      "required": "This field is required.",
+      "whatsapp": "Enter a valid phone number."
+    },
+    "errorGeneric": "Something went wrong. Please try again or book directly.",
+    "errorOffline": "We could not connect. Please try again or use the booking link.",
+    "success": "Thanks, {name}. I'll reach out to understand where you are today and recommend the right next step."
+  },
+  "thanks": {
+    "heading": "Thanks for getting in touch.",
+    "body": "I will be in touch soon."
+  },
+  "footer": {
+    "copyright": "The Fitness Formula",
+    "tagline": "Personalized fitness coaching for busy people.",
+    "whatsappLabel": "Message on WhatsApp",
+    "bookingLabel": "Book a session",
+    "legal": {
+      "privacy": {
+        "label": "Privacy Policy",
+        "href": "/en/privacy/"
+      },
+      "terms": {
+        "label": "Terms & Conditions",
+        "href": "/en/terms/"
+      },
+      "disclaimer": {
+        "label": "Health disclaimer",
+        "href": "/en/disclaimer/"
+      }
+    },
+    "socialLabels": {}
+  },
+  "ticker": {
+    "items": ["Strength", "Energy", "Nutrition", "Consistency beats intensity", "No subscriptions"],
+    "pause": "Pause the moving banner",
+    "play": "Play the moving banner"
+  }
+}

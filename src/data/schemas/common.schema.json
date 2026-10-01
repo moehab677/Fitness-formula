@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "Localized": {
+      "type": "object",
+      "required": ["en", "ar"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "ar": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "LocalizedPartial": {
+      "type": "object",
+      "properties": { "en": { "type": "string" }, "ar": { "type": "string" } },
+      "additionalProperties": false
+    },
+    "Id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+  }
+}

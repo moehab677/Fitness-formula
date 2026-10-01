@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["items"],
+  "properties": {
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "pronoun",
+          "role",
+          "challenge",
+          "plan",
+          "results",
+          "storyUrl",
+          "consent",
+          "order"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/Id"
+          },
+          "name": {
+            "$ref": "common.schema.json#/$defs/Localized"
+          },
+          "pronoun": {
+            "enum": ["his", "her"]
+          },
+          "role": {
+            "$ref": "common.schema.json#/$defs/Localized"
+          },
+          "challenge": {
+            "$ref": "common.schema.json#/$defs/Localized"
+          },
+          "plan": {
+            "$ref": "common.schema.json#/$defs/Localized"
+          },
+          "results": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["label", "value"],
+              "properties": {
+                "label": {
+                  "$ref": "common.schema.json#/$defs/Localized"
+                },
+                "from": {
+                  "$ref": "common.schema.json#/$defs/Localized"
+                },
+                "value": {
+                  "$ref": "common.schema.json#/$defs/Localized"
+                }
+              }
+            }
+          },
+          "duration": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "common.schema.json#/$defs/Localized"
+              }
+            ]
+          },
+          "storyUrl": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "pattern": "^https://"
+              }
+            ]
+          },
+          "consent": {
+            "type": "object",
+            "required": ["granted"],
+            "properties": {
+              "granted": {
+                "const": true
+              }
+            }
+          },
+          "order": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    }
+  }
+}
