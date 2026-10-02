@@ -4,13 +4,9 @@
 @tailwind utilities;
 /* card */
 /* minis */
-/* ico */
-/* stats */
-/* container-canvas */
-/* axiom */
-/* tag */
-/* label-caps */
-/* faq-plus */
+/* car-track */
+/* 16 */
+/* car-slide */
 @font-face {
   font-family: 'Barlow Condensed';
   src: url(/fonts/barlow-condensed-600-latin.woff2) format('woff2');
@@ -394,7 +390,7 @@
     margin-top: 36px;
   }
   .mini {
-    padding: 8px;
+    padding: 2px;
     border-radius: 20px;
   }
   .mini-v {
@@ -537,8 +533,9 @@
     border-radius: 28px;
     background: linear-gradient(180deg, rgb(var(--color-card-2)), rgb(var(--color-card)));
     border: 1px solid var(--line);
+    /* border-color: #a9be55; */
     box-shadow: var(--shadow-card);
-    padding: 22px;
+    padding: 18px;
     transition:
       transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1),
       box-shadow 0.5s,
@@ -941,9 +938,9 @@
   .stat-v {
     margin-bottom: 4px;
     color: rgb(var(--color-ink));
-    font-family: var(--font-display);
+    font-family: var(--font-label);
     font-size: 28px;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 1;
     letter-spacing: -0.01em;
     text-transform: uppercase;
@@ -952,12 +949,13 @@
     color: rgb(var(--color-muted));
     font-size: 14px;
     line-height: 1.4;
+    text-align: center;
   }
   .stats {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
-    margin-top: 64px;
+    margin-top: 16px;
   }
   .stat {
     padding: 20px;
@@ -1339,8 +1337,8 @@
     border-bottom: 1px solid var(--line);
   }
   .avatar-lg {
-    width: 64px;
-    height: 64px;
+    width: 16px;
+    height: 16px;
     border-radius: 20px;
     font-size: 24px;
     transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
@@ -1361,8 +1359,8 @@
     display: grid;
     flex-shrink: 0;
     place-items: center;
-    width: 64px;
-    height: 64px;
+    width: 16px;
+    height: 16px;
     border-radius: 20px;
     color: rgb(var(--color-on-accent));
     background: linear-gradient(145deg, rgb(var(--color-accent-2)), rgb(var(--color-accent)));
@@ -1790,7 +1788,7 @@
   }
   .car {
     overflow: hidden;
-    padding: 24px 0 70px;
+    padding: 24px 0 20px;
     margin: -24px 0 -40px;
   }
   .car-track {
@@ -1829,7 +1827,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    padding: 64px 16px 16px;
+    padding: 16px 16px 16px;
     object-fit: contain;
     transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
   }
@@ -1839,10 +1837,10 @@
     display: block;
   }
   .car-slide:hover .shot-image {
-    transform: scale(1.05);
+    transform: scale(1);
   }
   .car-slide:hover .shot {
-    transform: translateY(-10px) scale(1.015);
+    transform: translateY(-10px) ;
     border-color: rgb(var(--color-accent) / 0.45);
     box-shadow: var(--shadow-card-hover);
   }

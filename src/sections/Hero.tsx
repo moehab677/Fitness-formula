@@ -52,20 +52,22 @@ export function Hero() {
                 accent?: boolean
               }[]
             ).map((stat) => (
-              <article key={stat.label} className="card stat">
-                <span className="ico">
+              <article key={stat.label} className="card w-full  flex flex-col justify-center">
+                <span className="ico w-full">
                   <Icon name={stat.icon} />
                 </span>
-                <p className="stat-l">{stat.label}</p>
-                <p className={`stat-v ${stat.accent ? 'acc' : ''}`}>{stat.value}</p>
-                <p className="stat-d">{stat.detail}</p>
+                <span className=" w-full flex flex-col justify-center  items-center">
+                  <p className="stat-l">{stat.label}</p>
+                  <p className={`stat-v ${stat.accent ? 'acc' : ''}`}>{stat.value}</p>
+                  <p className="stat-d">{stat.detail}</p>
+                </span>
               </article>
             ))}
           </div>
         }
       >
         <span aria-hidden="true" className="orb orb-hero" />
-        <p className="chip in mb-[18px] text-label-sm label-caps">
+        <p className="chip in mb-[18px] text-label-sm max-[500px]:text-[12px] label-caps">
           <span className="dot" aria-hidden="true" /> {t.pill}
         </p>
         <h1
@@ -77,7 +79,7 @@ export function Hero() {
           <span className="acc">{t.heading}</span>
         </h1>
         <p className="in d2 max-w-prose text-body-lg text-text">{t.body}</p>
-        <div className="my-[40px] mb-[44px] grid gap-[16px] grid-cols-3">
+        <div className="my-[40px] mb-[44px] grid gap-[16px] grid-cols-3  max-[500px]:grid-cols-2">
           {(
             [
               { icon: 'dumbbell', ...t.features[0] },

@@ -4,7 +4,7 @@ import { registerCopy, useCopy } from './i18n/useCopy'
 import { registry } from './sections/registry'
 import { SkipLink } from './components/SkipLink'
 import { SiteHeader } from './components/SiteHeader'
-import { ThanksPage } from './pages/ThanksPage'
+import { ThanksPage } from './sections/pages/ThanksPage'
 import type { SectionProps } from './sections/Section'
 import { Hero } from './sections/Hero'
 import { Story } from './sections/Story'
@@ -37,7 +37,7 @@ const sections: Record<SectionId, ComponentType<SectionProps>> = {
 
 function Content({ route }: { route: Route }) {
   const copy = useCopy()
-  
+
   useEffect(() => {
     document.title = copy.meta.title
     let metaDesc = document.querySelector('meta[name="description"]')

@@ -71,7 +71,7 @@ export function TestimonialCarousel({ header }: { header: ReactNode }) {
           {Array.from({ length: count }, (_, i) => (
             <figure key={i} className="car-slide" aria-label={t.slideLabel.replace('{n}', String(i + 1)).replace('{total}', String(count))}>
               <div className="shot">
-                <span className="shot-n">{String(i + 1).padStart(2, '0')}</span>
+                {/* <span className="shot-n">{String(i + 1).padStart(2, '0')}</span> */}
                 <ResponsiveImage
                   assetKey={`testimonial-${i + 1}`}
                   alt={t.screenshotLabel.replace('{n}', String(i + 1))}
@@ -84,7 +84,7 @@ export function TestimonialCarousel({ header }: { header: ReactNode }) {
           ))}
         </div>
       </div>
-      <div className="car-foot">
+      {/* <div className="car-foot">
         <div className="car-dots">
           {Array.from({ length: total }, (_, i) => (
             <button
@@ -100,7 +100,7 @@ export function TestimonialCarousel({ header }: { header: ReactNode }) {
         <p className="car-count" aria-hidden="true">
           <span>{String(index + 1).padStart(2, '0')}</span> / {String(total).padStart(2, '0')}
         </p>
-      </div>
+      </div> */}
     </>
   )
 }

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
-import { site } from '../config/site'
-import { useLocale } from '../i18n/LocaleContext'
-import { useCopy } from '../i18n/useCopy'
+import { site } from '../../config/site'
+import { useLocale } from '../../i18n/LocaleContext'
+import { useCopy } from '../../i18n/useCopy'
 
 export function ThanksPage() {
   const copy = useCopy()

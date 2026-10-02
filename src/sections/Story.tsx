@@ -58,10 +58,10 @@ export function Story({ index }: SectionProps) {
         </div>
       </div> */}
       <p className="lead reveal italic text-muted">{t.mission}</p>
-      <ul className="minis grid grid-cols-3">
+      <ul className="minis grid grid-cols-3 ">
         {t.stats.map((stat, index) => (
           <li key={index} className="card mini">
-            <p className="mini-v acc">{stat.value}</p>
+            <p className="mini-v acc max-[500px]:text-[24px]">{stat.value}</p>
             <p className="tag">{stat.detail}</p>
           </li>
         ))}
