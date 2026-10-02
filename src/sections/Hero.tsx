@@ -38,14 +38,24 @@ export function Hero() {
         }
         below={
           <div className="stats">
-            {([
+            {(
+              [
                 { icon: 'user' as const, ...t.stats[0]! },
                 { icon: 'clock' as const, ...t.stats[1]!, accent: true },
                 { icon: 'variables' as const, ...t.stats[2]! },
                 { icon: 'baseline' as const, ...t.stats[3]! },
-              ] as { icon: IconName; label: string; value: string; detail: string; accent?: boolean }[]).map((stat) => (
+              ] as {
+                icon: IconName
+                label: string
+                value: string
+                detail: string
+                accent?: boolean
+              }[]
+            ).map((stat) => (
               <article key={stat.label} className="card stat">
-                <span className="ico"><Icon name={stat.icon} /></span>
+                <span className="ico">
+                  <Icon name={stat.icon} />
+                </span>
                 <p className="stat-l">{stat.label}</p>
                 <p className={`stat-v ${stat.accent ? 'acc' : ''}`}>{stat.value}</p>
                 <p className="stat-d">{stat.detail}</p>
@@ -58,24 +68,37 @@ export function Hero() {
         <p className="chip in mb-[18px] text-label-sm label-caps">
           <span className="dot" aria-hidden="true" /> {t.pill}
         </p>
-        <h1 id="hero-heading" className="heading in d1 mb-[28px] text-[56px] font-extrabold leading-[0.92] tracking-[-0.02em] md:text-[84px] lg:text-[112px] label-caps">
+        <h1
+          id="hero-heading"
+          className="heading in d1 mb-[28px] text-[50px] font-bold leading-[0.92] tracking-[-0.02em] md:text-[60px] lg:text-[80px] label-caps"
+        >
           {t.eyebrow}
           <br />
           <span className="acc">{t.heading}</span>
         </h1>
         <p className="in d2 max-w-prose text-body-lg text-text">{t.body}</p>
-        <div className="my-[40px] mb-[44px] grid gap-[16px] md:grid-cols-3">
-          {([
-            { icon: 'dumbbell', ...t.features[0] },
-            { icon: 'check', ...t.features[1] },
-            { icon: 'spark', ...t.features[2] },
-          ] as const).map((feature, index) => (
-            <article key={feature.title} className={`card in d${3 + index} rounded-[20px] p-[22px]`}>
-              <span aria-hidden="true" className="ico mb-[16px] h-[56px] w-[56px] rounded-[16px] text-[28px]">
+        <div className="my-[40px] mb-[44px] grid gap-[16px] grid-cols-3">
+          {(
+            [
+              { icon: 'dumbbell', ...t.features[0] },
+              { icon: 'check', ...t.features[1] },
+              { icon: 'spark', ...t.features[2] },
+            ] as const
+          ).map((feature, index) => (
+            <article
+              key={feature.title}
+              className={`card in d${3 + index} rounded-[20px] p-[22px]  `}
+            >
+              <span
+                aria-hidden="true"
+                className="ico mb-[16px] h-[56px] w-[56px] rounded-[16px] text-[28px]  "
+              >
                 <Icon name={feature.icon} />
               </span>
-              <h2 className="mb-[6px] text-[14px] font-semibold leading-[1.3] tracking-[0.12em] label-caps">{feature.title}</h2>
-              <p className="text-body-sm text-muted">{feature.detail}</p>
+              <h2 className="mb-[6px] text-[14px] font-bold leading-[1.3] tracking-[0.12em] label-caps">
+                {feature.title}
+              </h2>
+              <p className="text-body-sm text-muted ">{feature.detail}</p>
             </article>
           ))}
         </div>

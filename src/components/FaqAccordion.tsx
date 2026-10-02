@@ -33,7 +33,7 @@ export function FaqAccordion() {
   const lang = useLocale()
   const [open, setOpen] = useState<string | null>(publishedFaqs[0]?.id ?? null)
   return (
-    <div className="flex max-w-content flex-col gap-[16px]">
+    <div className="flex max-w-content  flex-col gap-[16px]">
       {publishedFaqs.map((item) => {
         const expanded = open === item.id
         return (
@@ -50,10 +50,10 @@ export function FaqAccordion() {
                 aria-expanded={expanded}
                 aria-controls={`faq-a-${item.id}`}
                 onClick={() => setOpen(expanded ? null : item.id)}
-                className="heading flex min-h-target w-full items-center justify-between gap-[24px] px-[24px] py-[24px] text-start text-headline-sm label-caps transition-colors duration-hover hover:text-accent md:px-[32px]"
+                className="heading flex min-h-target w-full items-center justify-between gap-[24px] px-[14px] py-[14px] text-start text-headline-sm max-md:text-[18px] label-caps transition-colors duration-hover hover:text-accent md:px-[32px]"
               >
                 {item.question[lang]}
-                <span aria-hidden="true" className="faq-plus">
+                <span aria-hidden="true" className="faq-plus ">
                   <Icon name="plus" />
                 </span>
               </button>

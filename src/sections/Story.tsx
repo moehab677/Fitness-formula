@@ -28,7 +28,7 @@ export function Story({ index }: SectionProps) {
         </span>
         <div>
           <p className="kicker mb-[6px]">{t.axiomLabel}</p>
-          <p className="heading text-[38px] leading-[1] label-caps">{t.highlight}</p>
+          <p className=" text-[24px] leading-[1] font-bold label-caps">{t.highlight}</p>
         </div>
       </div>
 
@@ -58,7 +58,7 @@ export function Story({ index }: SectionProps) {
         </div>
       </div> */}
       <p className="lead reveal italic text-muted">{t.mission}</p>
-      <ul className="minis">
+      <ul className="minis grid grid-cols-3">
         {t.stats.map((stat, index) => (
           <li key={index} className="card mini">
             <p className="mini-v acc">{stat.value}</p>

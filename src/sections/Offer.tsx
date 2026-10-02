@@ -33,26 +33,26 @@ export function Offer({ index }: SectionProps) {
         ))}
       </div>
       <ul className="trust">
-        <li className="card card-hover reveal flex items-start gap-[22px] p-[30px]">
-          <span aria-hidden="true" className="ico ico-lg">
+        <li className="card card-hover reveal flex items-start max-md:justify-center max-md:flex-col max-sm: gap-[22px] p-[30px]">
+          <span aria-hidden="true" className="ico ico-lg max-md:ico-md">
             <Icon name="block" />
           </span>
           <div>
-            <h3 className="heading mb-[12px] text-headline-sm label-caps">{pricing.terms[lang]}</h3>
-            <p className="text-body-md text-muted">
-              {t.termsNote}
-            </p>
+            <h3 className="heading mb-[12px] text-headline-sm  lowercase">
+              {pricing.terms[lang]}
+            </h3>
+            <p className="text-body-sm text-muted">{t.termsNote}</p>
           </div>
         </li>
-        <li className="card card-hover reveal flex items-start gap-[22px] p-[30px]">
-          <span aria-hidden="true" className="ico ico-lg">
+        <li className="card card-hover reveal flex items-start max-md:justify-center max-md:flex-col gap-[22px] p-[30px]">
+          <span aria-hidden="true" className="ico ico-lg max-md:ico-md">
             <Icon name="shield" />
           </span>
           <div>
-            <h3 className="heading mb-[12px] text-headline-sm label-caps">
+            <h3 className="heading mb-[12px] text-headline-sm  ">
               {pricing.guarantee.title[lang]}
             </h3>
-            <p className="text-body-md text-muted">{pricing.guarantee.description[lang]}</p>
+            <p className="text-body-sm text-muted">{pricing.guarantee.description[lang]}</p>
           </div>
         </li>
       </ul>
