@@ -1,151 +1,139 @@
-/* Design tokens — constitution v3.0.0, "Design System Tokens". Declared once here and
-   consumed by tailwind.config.js and globals.css. Colours are RGB channels so that
-   Tailwind opacity modifiers and rgb(var(--x) / a) both work. */
+/* Design tokens — "Swiss editorial" reference design (code 4.html, approved by the client
+   2026-10-02). Declared once here and consumed by tailwind.config.js and globals.css.
+   Colours are RGB channels so that Tailwind opacity modifiers and rgb(var(--x) / a) work. */
 :root {
-  /* Palette */
-  --color-bg: 11 11 9;
-  --color-bg-2: 16 16 14;
-  --color-card: 22 22 19;
-  --color-card-2: 29 29 25;
-  --color-white: 255 255 255;
-  --color-accent: 195 216 108;
-  --color-accent-2: 221 238 142;
-  --color-ink: 245 244 239;
-  --color-text: 221 219 212;
-  --color-muted: 169 168 159;
-  --color-dim: 142 141 131;
-  --color-on-accent: 17 17 15;
-  --color-warn: 255 138 122;
-  --color-shadow: 0 0 0;
-  --line: rgb(var(--color-white) / 0.08);
-  --line-2: rgb(var(--color-white) / 0.14);
-
-  /* Elevation */
-  --shadow-card:
-    inset 0 1px 0 rgb(var(--color-white) / 0.07), 0 1px 2px rgb(var(--color-shadow) / 0.5),
-    0 24px 48px -16px rgb(var(--color-shadow) / 0.7);
-  --shadow-card-hover:
-    inset 0 1px 0 rgb(var(--color-white) / 0.1), 0 2px 4px rgb(var(--color-shadow) / 0.5),
-    0 40px 80px -24px rgb(var(--color-shadow) / 0.85),
-    0 18px 60px -20px rgb(var(--color-accent) / 0.35);
-  --shadow-glow:
-    0 14px 34px -10px rgb(var(--color-accent) / 0.65), inset 0 1px 0 rgb(var(--color-white) / 0.55),
-    inset 0 -2px 0 rgb(var(--color-shadow) / 0.12);
-  --shadow-glow-hover:
-    0 22px 44px -12px rgb(var(--color-accent) / 0.8), inset 0 1px 0 rgb(var(--color-white) / 0.6);
-  --shadow-tile:
-    inset 0 1px 0 rgb(var(--color-white) / 0.12), 0 12px 28px -10px rgb(var(--color-accent) / 0.45);
-  --shadow-pop: 0 16px 36px -12px rgb(var(--color-shadow) / 0.8);
+  /* Palette (reference values) */
+  --color-bg: 17 17 15; /* #11110F ink-base */
+  --color-card: 22 22 20; /* #161614 ink-card */
+  --color-elevated: 28 28 25; /* #1C1C19 ink-elevated */
+  --color-hairline: 38 38 34; /* #262622 hairline-dark */
+  --color-hairline-2: 46 46 42; /* #2E2E2A hairline-subtle */
+  --color-accent: 183 201 107; /* #B7C96B accent */
+  --color-accent-hover: 198 215 126; /* #C6D77E accent hover */
+  --color-ink: 245 243 238; /* #F5F3EE on-surface */
+  --color-muted: 158 156 148; /* #9E9C94 on-surface-variant */
+  --color-dim: 119 117 111; /* #77756F micro labels */
+  --color-on-accent: 17 17 15; /* #11110F */
+  --color-danger: 186 26 26; /* #BA1A1A exclusion icons */
 
   /* Layout */
-  --canvas: 1320px;
-  --pad: 16px;
-  --section-gap: 88px;
-  --header-h: 96px;
+  --canvas: 1200px;
+  --pad: 20px;
+  --section-pad: 48px;
+  --header-h: 57px;
 
-  /* Type: family, size, line-height, weight, tracking per role (Latin defaults). */
-  --font-body: 'Newsreader', Georgia, serif;
+  /* Families */
   --font-display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --font-body: 'Newsreader', Georgia, serif;
   --font-label: 'Space Grotesk', system-ui, sans-serif;
-  --fs-display: 56px;
-  --lh-display: 0.92;
-  --fw-display: 800;
-  --ls-display: -0.02em;
-  --fs-headline-xl: 42px;
-  --lh-headline-xl: 0.98;
-  --fw-headline-xl: 700;
-  --ls-headline-xl: -0.015em;
-  --fs-headline-lg: 26px;
-  --lh-headline-lg: 1.05;
-  --fw-headline-lg: 700;
-  --ls-headline-lg: 0.005em;
-  --fs-headline-md: 26px;
-  --lh-headline-md: 1.05;
-  --fw-headline-md: 700;
-  --fs-headline-sm: 22px;
-  --lh-headline-sm: 1.15;
-  --fw-headline-sm: 700;
-  --fs-metric: 76px;
-  --lh-metric: 0.9;
-  --fw-metric: 800;
-  --ls-metric: -0.02em;
-  --fs-metric-sm: 28px;
-  --lh-metric-sm: 1;
-  --fw-metric-sm: 700;
-  --fs-body-lg: 19px;
-  --lh-body-lg: 1.6;
-  --fs-body-md: 18px;
-  --lh-body-md: 1.65;
-  --fs-body-card: 17px;
-  --lh-body-card: 1.55;
-  --fs-body-sm: 15px;
-  --lh-body-sm: 1.45;
-  --fw-body: 400;
-  --fs-label-lg: 15px;
-  --lh-label-lg: 1.2;
-  --fw-label-lg: 600;
+
+  /* Type roles (reference mobile scale) */
+  --fs-hero: 46px;
+  --lh-hero: 48px;
+  --fs-h2: 36px;
+  --lh-h2: 40px;
+  --fs-h-lg: 28px;
+  --lh-h-lg: 32px;
+  --fs-h-md: 22px;
+  --lh-h-md: 26px;
+  --fs-h-sm: 18px;
+  --lh-h-sm: 22px;
+  --fs-metric: 52px;
+  --fs-body-lg: 17px;
+  --lh-body-lg: 26px;
+  --fs-body-md: 15px;
+  --lh-body-md: 22px;
+  --fs-body-sm: 13px;
+  --lh-body-sm: 19px;
+  --fs-label-lg: 13px;
+  --lh-label-lg: 16px;
+  --fs-label-md: 11px;
+  --lh-label-md: 15px;
+  --fs-label-sm: 9px;
+  --lh-label-sm: 13px;
+
+  /* Tracking (Latin only; Arabic resets these to 0 below) */
+  --ls-hero: -0.02em;
+  --ls-h2: -0.01em;
+  --ls-h-md: 0.01em;
+  --ls-h-sm: 0.02em;
   --ls-label-lg: 0.08em;
-  --fs-label-md: 13px;
-  --lh-label-md: 1.3;
-  --fw-label-md: 600;
   --ls-label-md: 0.1em;
-  --fs-label-sm: 12px;
-  --lh-label-sm: 1.3;
-  --fw-label-sm: 600;
   --ls-label-sm: 0.14em;
+  --ls-wide: 0.12em;
 }
 
+/* Tablet: same language, more air. */
 @media (min-width: 721px) {
   :root {
     --pad: 32px;
-    --section-gap: 128px;
-    --fs-display: 84px;
-    --fs-headline-xl: 56px;
-    --fs-headline-lg: 32px;
-    --fs-headline-md: 30px;
-    --fs-headline-sm: 26px;
-    --fs-metric: 104px;
-    --fs-body-lg: 22px;
+    --section-pad: 80px;
+    --header-h: 64px;
+    --fs-hero: 64px;
+    --lh-hero: 62px;
+    --fs-h2: 48px;
+    --lh-h2: 50px;
+    --fs-h-lg: 32px;
+    --lh-h-lg: 36px;
+    --fs-h-md: 24px;
+    --lh-h-md: 28px;
+    --fs-h-sm: 20px;
+    --lh-h-sm: 24px;
+    --fs-metric: 60px;
+    --fs-body-lg: 19px;
+    --lh-body-lg: 29px;
+    --fs-body-md: 17px;
+    --lh-body-md: 26px;
+    --fs-body-sm: 15px;
+    --lh-body-sm: 22px;
+    --fs-label-lg: 14px;
+    --lh-label-lg: 18px;
+    --fs-label-md: 12px;
+    --lh-label-md: 16px;
+    --fs-label-sm: 11px;
+    --lh-label-sm: 15px;
   }
 }
 
+/* Desktop */
 @media (min-width: 1100px) {
   :root {
-    --pad: 64px;
-    --fs-display: 112px;
-    --fs-headline-xl: 72px;
+    --pad: 48px;
+    --section-pad: 112px;
+    --fs-hero: 88px;
+    --lh-hero: 84px;
+    --fs-h2: 64px;
+    --lh-h2: 64px;
+    --fs-metric: 68px;
   }
 }
 
-/* Arabic typography: Cairo Black headings, Tajawal body/labels, same size and spacing tokens. */
+/* Arabic: Cairo Black headings, Tajawal body/labels. Arabic script is never tracked and
+   needs taller line boxes. */
 :root[lang='ar'] {
-  --font-body: 'Tajawal', Tahoma, sans-serif;
   --font-display: 'Cairo', Tahoma, sans-serif;
+  --font-body: 'Tajawal', Tahoma, sans-serif;
   --font-label: 'Tajawal', Tahoma, sans-serif;
-  --lh-display: 1.06;
-  --fw-display: 900;
-  --ls-display: 0;
-  --lh-headline-xl: 1.13;
-  --ls-headline-xl: 0;
-  --lh-headline-lg: 1.21;
-  --ls-headline-lg: 0;
-  --lh-headline-md: 1.21;
-  --lh-headline-sm: 1.32;
-  --lh-metric: 1.04;
-  --fw-metric: 900;
-  --ls-metric: 0;
-  --lh-metric-sm: 1.15;
-  --lh-body-lg: 2;
-  --lh-body-md: 2.06;
-  --lh-body-card: 1.94;
-  --lh-body-sm: 1.81;
-  --lh-label-lg: 1.5;
-  --fw-label-lg: 700;
+  --lh-hero: 1.25;
+  --lh-h2: 1.35;
+  --lh-h-lg: 1.45;
+  --lh-h-md: 1.5;
+  --lh-h-sm: 1.55;
+  --lh-body-lg: 1.9;
+  --lh-body-md: 1.9;
+  --lh-body-sm: 1.8;
+  --lh-label-lg: 1.6;
+  --lh-label-md: 1.6;
+  --lh-label-sm: 1.6;
+  /* Arabic glyphs are unreadable at the 9–11px Latin micro-label sizes. */
+  --fs-label-sm: 12px;
+  --fs-label-md: 13px;
+  --ls-hero: 0;
+  --ls-h2: 0;
+  --ls-h-md: 0;
+  --ls-h-sm: 0;
   --ls-label-lg: 0;
-  --lh-label-md: 1.63;
-  --fw-label-md: 700;
   --ls-label-md: 0;
-  --lh-label-sm: 1.63;
-  --fw-label-sm: 700;
   --ls-label-sm: 0;
+  --ls-wide: 0;
 }

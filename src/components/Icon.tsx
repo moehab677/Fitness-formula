@@ -99,6 +99,24 @@ const icons = {
       <path d="m3 7 9 6 9-6" />
     </>
   ),
+  bolt: <path d="M13 2 4 14h7l-1 8 9-12h-7z" />,
+  restaurant: <path d="M7 2v20M4 2v6a3 3 0 0 0 6 0V2M17 22V2c-2.2 0-4 2.7-4 6v5h4" />,
+  'chevron-down': <path d="m6 9 6 6 6-6" />,
+  'check-circle': (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="m8 12 3 3 5-6" />
+    </>
+  ),
+  cancel: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="m9 9 6 6M15 9l-6 6" />
+    </>
+  ),
+  chat: <path d="M4 5h16v11H8l-4 4z" />,
+  'north-east': <path d="M7 17 17 7M8 7h9v9" />,
+  'format-quote': <path d="M10 7H6v5h3c0 2-1 3-3 4M18 7h-4v5h3c0 2-1 3-3 4" />,
   plus: <path d="M12 5v14M5 12h14" />,
   close: <path d="M6 6l12 12M18 6 6 18" />,
   menu: <path d="M4 7h16M4 12h16M4 17h16" />,
@@ -109,7 +127,7 @@ const icons = {
 export type IconName = keyof typeof icons
 
 // Icons that point along the reading direction flip in RTL.
-const directional: ReadonlySet<IconName> = new Set(['arrow', 'arrow-back'])
+const directional: ReadonlySet<IconName> = new Set(['arrow', 'arrow-back', 'north-east'])
 
 export function Icon({ name, className = '' }: { name: IconName; className?: string }) {
   return (
@@ -119,7 +137,7 @@ export function Icon({ name, className = '' }: { name: IconName; className?: str
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.8"
+      strokeWidth="1.6"
       strokeLinecap="round"
       strokeLinejoin="round"
       className={`h-[1em] w-[1em] shrink-0 ${directional.has(name) ? 'rtl:-scale-x-100' : ''} ${className}`}

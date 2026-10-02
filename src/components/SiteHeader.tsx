@@ -4,8 +4,9 @@ import { Icon } from './Icon'
 import { LanguageSwitcher } from './LanguageSwitcher'
 import { PrimaryCTA } from './PrimaryCTA'
 
-// The compact nav keeps language and the primary CTA visible at every width. The menu button
-// opens the anchor links in a dropdown below 1100px.
+// Reference header: square accent dot + wordmark, bordered EN / AR box and a menu button.
+// From 1100px the anchor links and a compact primary CTA sit inline; below that the menu
+// button opens them (plus the CTA) in a panel under the bar.
 export function SiteHeader() {
   const copy = useCopy()
   const [menuOpen, setMenuOpen] = useState(false)
@@ -21,12 +22,7 @@ export function SiteHeader() {
     ['transformations', copy.nav.transformations],
   ]
   const linkList = links.map(([id, label]) => (
-    <a
-      key={id}
-      href={`#${id}`}
-      onClick={() => setMenuOpen(false)}
-      className="nav-link text-label-md label-caps"
-    >
+    <a key={id} href={`#${id}`} onClick={() => setMenuOpen(false)} className="nav-link">
       {label}
     </a>
   ))
@@ -79,34 +75,26 @@ export function SiteHeader() {
   return (
     <header
       ref={headerRef}
-      className="site-header nav-shell"
+      className="site-header"
       data-hidden={headerHidden && !menuOpen ? 'true' : undefined}
       onBlur={onBlur}
     >
-      <div className="container-canvas relative">
-        <div className="nav">
-          <a href="/" className="flex min-h-target items-center gap-[12px] text-ink">
-            <span className="brand-mark text-headline-sm text-on-accent" aria-hidden="true">
-              <img src="/logo.png" alt="logo" />
-            </span>
-            <span className="brand-wordmark">{copy.nav.wordmark}</span>
+      <div className="wrap">
+        <div className="bar">
+          <a href="#hero" className="brand">
+            <span className="brand-dot" aria-hidden="true" />
+            <span>{copy.nav.wordmark}</span>
           </a>
-          <nav aria-label={copy.nav.primaryLabel} className="hidden gap-[6px] lg:flex">
+          <nav aria-label={copy.nav.primaryLabel} className="nav-links">
             {linkList}
           </nav>
-          <div className="flex items-center gap-[6px] md:gap-[10px]">
-            <div className="flex">
-              <LanguageSwitcher variant="segmented" />
-            </div>
-            <PrimaryCTA
-              source="header"
-              compact
-              className="inline-flex h-[46px] w-[46px] justify-center px-[0px] md:w-auto md:justify-start md:px-[24px]"
-            />
+          <div className="bar-end">
+            <LanguageSwitcher variant="segmented" />
+            <PrimaryCTA source="header" compact className="header-cta" />
             <button
               ref={toggleRef}
               type="button"
-              className="menu-toggle lg:hidden"
+              className="menu-toggle"
               aria-expanded={menuOpen}
               aria-controls="site-menu"
               aria-label={menuOpen ? copy.nav.menuClose : copy.nav.menuOpen}
@@ -117,10 +105,9 @@ export function SiteHeader() {
           </div>
         </div>
         {menuOpen && (
-          <div id="site-menu" className="menu-panel lg:hidden">
-            <nav aria-label={copy.nav.primaryLabel} className="flex flex-col">
-              {linkList}
-            </nav>
+          <div id="site-menu" className="menu-panel">
+            <nav aria-label={copy.nav.primaryLabel}>{linkList}</nav>
+            <PrimaryCTA source="menu" />
           </div>
         )}
       </div>

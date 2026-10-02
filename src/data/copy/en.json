@@ -40,6 +40,7 @@
       "body": "I help busy men and women above 30 get stronger, look better, and feel healthier without turning fitness into a full-time job.",
       "alt": "Coach Mostafa Kheder",
       "pill": "Online coaching for busy adults 30+",
+      "scrollHint": "Scroll to explore",
       "features": [
         { "title": "Strength", "detail": "Build a stronger body" },
         { "title": "Nutrition", "detail": "Practical nutrition that fits your life" },
@@ -50,6 +51,30 @@
         { "label": "Coaching", "value": "Online", "detail": "Built around your schedule" },
         { "label": "Approach", "value": "Flexible", "detail": "Small, sustainable changes" },
         { "label": "Focus", "value": "Consistency", "detail": "Progress you can maintain" }
+      ]
+    },
+    "problem": {
+      "label": "The problem",
+      "heading": "Busy life. Good intentions.",
+      "accent": "No clear strategy.",
+      "lead": "The problem is usually not that you don't try hard enough. It's that you don't have a clear fitness strategy that fits your actual life, and that you can sustain.",
+      "itemLabel": "Problem",
+      "items": [
+        {
+          "tag": "Limited time",
+          "title": "No time to do it all",
+          "body": "Work, family and everything in between leave little room for long workouts or complicated meal plans."
+        },
+        {
+          "tag": "Start & stop",
+          "title": "Always starting over",
+          "body": "A new diet, a new program, a fresh start every Monday, then a busy week or a trip sends you back to square one."
+        },
+        {
+          "tag": "Mixed advice",
+          "title": "Too much conflicting advice",
+          "body": "Every source says something different about training and nutrition, so it's hard to know what actually works for you."
+        }
       ]
     },
     "story": {
@@ -63,7 +88,7 @@
       ],
       "highlight": "Consistency beats intensity.",
       "mission": "That's why I started coaching: to help busy people build a stronger, healthier body in a way that actually fits their life.",
-      "stats" : [
+      "stats": [
         { "label": "Years training", "value": "5+ y", "detail": "Training Experience" },
         { "label": "Years coaching", "value": "40+", "detail": "Clients Coached" },
         { "label": "Clients coached", "value": "98.2%", "detail": "Client Retention" }

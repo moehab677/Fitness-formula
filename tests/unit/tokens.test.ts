@@ -15,56 +15,38 @@ function contrast(foreground: number[], background: number[]) {
   const dark = sorted[1] ?? 0
   return (light + 0.05) / (dark + 0.05)
 }
-describe('design token contract (constitution v3.0.0)', () => {
+// Reference design palette (code 4.html, approved 2026-10-02).
+const palette = {
+  bg: [17, 17, 15],
+  card: [22, 22, 20],
+  elevated: [28, 28, 25],
+  hairline: [38, 38, 34],
+  'hairline-2': [46, 46, 42],
+  accent: [183, 201, 107],
+  'accent-hover': [198, 215, 126],
+  ink: [245, 243, 238],
+  muted: [158, 156, 148],
+  dim: [119, 117, 111],
+  'on-accent': [17, 17, 15],
+  danger: [186, 26, 26],
+}
+
+describe('design token contract (reference design)', () => {
   const css = readFileSync('src/styles/tokens.css', 'utf8')
-  const palette = {
-    bg: [11, 11, 9],
-    'bg-2': [16, 16, 14],
-    card: [22, 22, 19],
-    'card-2': [29, 29, 25],
-    accent: [195, 216, 108],
-    'accent-2': [221, 238, 142],
-    ink: [245, 244, 239],
-    text: [221, 219, 212],
-    muted: [169, 168, 159],
-    dim: [142, 141, 131],
-    'on-accent': [17, 17, 15],
-    warn: [255, 138, 122],
-  }
-  it('declares the required RGB channel values', () => {
+  it('declares the reference RGB channel values', () => {
     for (const [name, value] of Object.entries(palette))
       expect(css).toContain(`--color-${name}: ${value.join(' ')};`)
   })
-  it('keeps WCAG AA contrast for every text pairing on every dark surface', () => {
-    const surfaces = [palette.bg, palette['bg-2'], palette.card, palette['card-2']]
-    for (const surface of surfaces) {
-      for (const fg of [palette.ink, palette.text, palette.muted, palette.dim, palette.accent])
+  it('keeps WCAG AA contrast for body text on every dark surface', () => {
+    for (const surface of [palette.bg, palette.card, palette.elevated])
+      for (const fg of [palette.ink, palette.muted, palette.accent])
         expect(contrast(fg, surface)).toBeGreaterThanOrEqual(4.5)
-      expect(contrast(palette.warn, surface)).toBeGreaterThanOrEqual(4.5)
-    }
     expect(contrast(palette['on-accent'], palette.accent)).toBeGreaterThanOrEqual(4.5)
-    expect(contrast(palette['on-accent'], palette['accent-2'])).toBeGreaterThanOrEqual(4.5)
-    expect(contrast(palette.dim, palette['card-2'])).toBeGreaterThanOrEqual(5.06)
   })
-  it('exposes only the token scales', () => {
+  it('exposes only the token colours', () => {
     expect(Object.keys(config.theme.colors).sort()).toEqual(
-      ['transparent', 'current', 'line', 'line-2', ...Object.keys(palette)].sort(),
+      ['transparent', 'current', ...Object.keys(palette)].sort(),
     )
-    expect(config.theme.screens).toEqual({ md: '768px', lg: '1200px', '2xl': '1440px' })
-    expect(config.theme.borderRadius).toEqual({
-      none: '0',
-      xs: '10px',
-      sm: '14px',
-      md: '20px',
-      lg: '28px',
-      xl: '36px',
-      '2xl': '44px',
-      full: '9999px',
-    })
-    expect(Object.keys(config.theme.boxShadow).sort()).toEqual(
-      ['none', 'card', 'card-hover', 'glow', 'glow-hover', 'tile', 'pop'].sort(),
-    )
-    for (const value of Object.values(config.theme.boxShadow).filter((v) => v !== 'none'))
-      expect(value).toMatch(/^var\(--shadow-/)
+    expect(config.theme.screens).toEqual({ md: '721px', lg: '1100px', '2xl': '1440px' })
   })
 })

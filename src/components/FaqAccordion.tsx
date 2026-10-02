@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useLocale } from '../i18n/LocaleContext'
 import faqs from '../data/faqs.json'
-import { Icon } from './Icon'
 
 const publishedFaqs = faqs.items.filter((item) => item.published).sort((a, b) => a.order - b.order)
 
@@ -26,23 +25,17 @@ function Answer({ text }: { text: string }) {
   )
 }
 
-// Accessible accordion (US6) in the approved design's FAQ style: one rounded card per
-// question, accent "+" tile that turns into "×". Answers are pre-rendered open so they are
-// readable without scripts; the `.js` rule in globals.css collapses them before first paint.
+// Accessible accordion in the reference style: hairline-divided rows, uppercase question
+// and an accent "+" that turns 45° into "×" when open.
 export function FaqAccordion() {
   const lang = useLocale()
-  const [open, setOpen] = useState<string | null>(publishedFaqs[0]?.id ?? null)
+  const [open, setOpen] = useState<string | null>(null)
   return (
-    <div className="flex max-w-content  flex-col gap-[16px]">
+    <div className="faq">
       {publishedFaqs.map((item) => {
         const expanded = open === item.id
         return (
-          <div
-            key={item.id}
-            data-faq-item={item.id}
-            data-open={expanded ? '' : undefined}
-            className="faq-item reveal"
-          >
+          <div key={item.id} data-faq-item={item.id} className="faq-item">
             <h3>
               <button
                 id={`faq-q-${item.id}`}
@@ -50,11 +43,11 @@ export function FaqAccordion() {
                 aria-expanded={expanded}
                 aria-controls={`faq-a-${item.id}`}
                 onClick={() => setOpen(expanded ? null : item.id)}
-                className="heading flex min-h-target w-full items-center justify-between gap-[24px] px-[14px] py-[14px] text-start text-headline-sm max-md:text-[18px] label-caps transition-colors duration-hover hover:text-accent md:px-[32px]"
+                className="faq-q t-h-sm caps"
               >
                 {item.question[lang]}
-                <span aria-hidden="true" className="faq-plus ">
-                  <Icon name="plus" />
+                <span aria-hidden="true" className="faq-plus">
+                  +
                 </span>
               </button>
             </h3>
@@ -68,7 +61,7 @@ export function FaqAccordion() {
               style={{ gridTemplateRows: expanded ? '1fr' : '0fr' }}
             >
               <div className="min-h-0 overflow-hidden">
-                <div className="flex flex-col gap-[12px] px-[24px] pb-[28px] text-body-md text-muted md:pe-24 md:ps-8">
+                <div className="faq-a t-body-sm">
                   <Answer text={item.answer[lang]} />
                 </div>
               </div>

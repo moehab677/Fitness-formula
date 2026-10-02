@@ -15,23 +15,18 @@ export function ThanksPage() {
     }
   }, [])
   return (
-    <main id="main" className="page min-h-screen">
-      <div className="container-canvas py-[128px]">
-        <h1 className="heading text-headline-xl label-caps">{copy.thanks.heading}</h1>
-        <p className="mt-[24px] text-body-lg text-text">
+    <main id="main" className="page">
+      <div className="thanks wrap">
+        <h1 className="t-h2 caps">{copy.thanks.heading}</h1>
+        <p className="t-body-lg">
           {copy.thanks.body}
           <span ref={nameRef} hidden />
         </p>
-        <div className="mt-[40px] flex flex-wrap items-center gap-[16px]">
-          <a className="btn btn-g text-label-lg label-caps" href={`/${lang}/`}>
+        <div className="btns">
+          <a className="btn btn-g" href={`/${lang}/`}>
             {copy.nav.logoAlt}
           </a>
-          <a
-            className="btn btn-p text-label-lg label-caps"
-            href={site.bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a className="btn btn-p" href={site.bookingUrl} target="_blank" rel="noopener noreferrer">
             {copy.cta.secondary}
           </a>
         </div>

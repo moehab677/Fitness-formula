@@ -6,46 +6,56 @@
   },
   {
     "index": 2,
-    "id": "story",
+    "id": "problem",
     "ground": "bg"
   },
   {
     "index": 3,
-    "id": "approach",
+    "id": "story",
     "ground": "bg"
   },
   {
     "index": 4,
-    "id": "process",
+    "id": "approach",
     "ground": "bg"
   },
   {
     "index": 5,
-    "id": "offer",
+    "id": "process",
     "ground": "bg"
   },
   {
     "index": 6,
-    "id": "transformations",
+    "id": "offer",
     "ground": "bg"
   },
   {
     "index": 7,
-    "id": "testimonials",
+    "id": "transformations",
     "ground": "bg"
   },
   {
     "index": 8,
-    "id": "faq",
+    "id": "testimonials",
     "ground": "bg"
   },
   {
     "index": 9,
-    "id": "final-cta",
+    "id": "not-for",
     "ground": "bg"
   },
   {
     "index": 10,
+    "id": "faq",
+    "ground": "bg"
+  },
+  {
+    "index": 11,
+    "id": "final-cta",
+    "ground": "bg"
+  },
+  {
+    "index": 12,
     "id": "footer",
     "ground": "bg"
   }

@@ -7,6 +7,7 @@ import { SiteHeader } from './components/SiteHeader'
 import { ThanksPage } from './sections/pages/ThanksPage'
 import type { SectionProps } from './sections/Section'
 import { Hero } from './sections/Hero'
+import { Problem } from './sections/Problem'
 import { Story } from './sections/Story'
 import { Approach } from './sections/Approach'
 import { Process } from './sections/Process'
@@ -16,6 +17,7 @@ import { Offer } from './sections/Offer'
 import { FinalCta } from './sections/FinalCta'
 import { SiteFooter } from './sections/SiteFooter'
 import { Faq } from './sections/Faq'
+import { NotFor } from './sections/NotFor'
 
 type Route = 'home' | 'thanks'
 type SectionId = (typeof registry)[number]['id']
@@ -24,12 +26,14 @@ type SectionId = (typeof registry)[number]['id']
 // through configuration); this map only binds each id to its component.
 const sections: Record<SectionId, ComponentType<SectionProps>> = {
   hero: Hero,
+  problem: Problem,
   story: Story,
   approach: Approach,
   process: Process,
   testimonials: Results,
   offer: Offer,
   transformations: Transformations,
+  'not-for': NotFor,
   faq: Faq,
   'final-cta': FinalCta,
   footer: SiteFooter,

@@ -3,59 +3,58 @@ import { useCopy } from '../i18n/useCopy'
 import { useLocale } from '../i18n/LocaleContext'
 import { Icon } from '../components/Icon'
 import { PricingOption } from '../components/PricingOption'
-import { SectionHeader } from '../components/SectionHeader'
-import { Section, type SectionProps } from './Section'
+import { Section } from './Section'
 
-// Pricing follows the reference's two offer cards, terms and guarantee cards.
-export function Offer({ index }: SectionProps) {
+const bookingFormUrl = 'https://tally.so/r/VL2v1g'
+
+// Pricing & offer (reference): heading + session pill, the standard card, the solid accent
+// bundle card, the two trust rows and one full-width booking button.
+export function Offer() {
   const copy = useCopy()
   const lang = useLocale()
   const t = copy.sections.offer
   const tiers = [...pricing.tiers].sort((a, b) => a.order - b.order)
+  const first = tiers[0]
   return (
     <Section id="offer">
-      <SectionHeader
-        id="offer"
-        index={index}
-        label={t.label}
-        heading={t.heading}
-        accent={t.accent}
-        tag={t.label}
-        lead={
-          <span className="offer-lead">
-            <Icon name="clock" /> {tiers[0]!.name[lang]} · {tiers[0]!.duration.label[lang]}
-          </span>
-        }
-      />
-      <div className="grid items-stretch gap-[28px] md:grid-cols-2">
+      <div className="offer-head reveal">
+        <h2 id="offer-heading" className="t-h2 caps">
+          {t.heading} {t.accent}
+        </h2>
+        {first && (
+          <p className="pill">
+            <span className="pill-dot" aria-hidden="true" />
+            <span className="t-label-sm caps">
+              {first.name[lang]} | {first.duration.label[lang]}
+            </span>
+          </p>
+        )}
+      </div>
+      <div className="tiers">
         {tiers.map((tier) => (
           <PricingOption key={tier.id} tier={tier} />
         ))}
       </div>
       <ul className="trust">
-        <li className="card card-hover reveal flex items-start max-md:justify-center max-md:flex-col max-sm: gap-[22px] p-[30px]">
-          <span aria-hidden="true" className="ico ico-lg max-md:ico-md">
-            <Icon name="block" />
-          </span>
+        <li className="reveal">
+          <Icon name="check-circle" />
           <div>
-            <h3 className="heading mb-[12px] text-headline-sm  lowercase">
-              {pricing.terms[lang]}
-            </h3>
-            <p className="text-body-sm text-muted">{t.termsNote}</p>
+            <h3 className="t-label-sm caps">{pricing.terms[lang]}</h3>
+            <p className="trust-desc">{t.termsNote}</p>
           </div>
         </li>
-        <li className="card card-hover reveal flex items-start max-md:justify-center max-md:flex-col gap-[22px] p-[30px]">
-          <span aria-hidden="true" className="ico ico-lg max-md:ico-md">
-            <Icon name="shield" />
-          </span>
+        <li className="reveal">
+          <Icon name="shield" />
           <div>
-            <h3 className="heading mb-[12px] text-headline-sm  ">
-              {pricing.guarantee.title[lang]}
-            </h3>
-            <p className="text-body-sm text-muted">{pricing.guarantee.description[lang]}</p>
+            <h3 className="t-label-sm caps">{pricing.guarantee.title[lang]}</h3>
+            <p className="trust-desc">{pricing.guarantee.description[lang]}</p>
           </div>
         </li>
       </ul>
+      <a href={bookingFormUrl} data-source="offer" className="btn btn-p btn-lg offer-cta">
+        <span>{pricing.cta.label[lang]}</span>
+        <Icon name="arrow" />
+      </a>
     </Section>
   )
 }

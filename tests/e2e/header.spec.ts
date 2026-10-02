@@ -7,7 +7,7 @@ test('mobile header menu and scroll behavior remain accessible', async ({ page }
   const header = page.locator('header.site-header')
   const menu = page.getByRole('button', { name: 'Open menu' })
   await expect(page.locator('header .lang')).toBeVisible()
-  await expect(page.locator('header [data-source="header"]')).toBeVisible()
+  await expect(page.locator('header [data-source="header"]')).toBeHidden()
   await expect(menu).toBeVisible()
   await expect(menu).toHaveAttribute('aria-expanded', 'false')
   await menu.click()
@@ -17,7 +17,7 @@ test('mobile header menu and scroll behavior remain accessible', async ({ page }
     'true',
   )
   await expect(page.locator('header .lang')).toBeVisible()
-  await expect(page.locator('header [data-source="header"]')).toBeVisible()
+  await expect(page.locator('header [data-source="menu"]')).toBeVisible()
   await page
     .getByRole('navigation', { name: 'Primary' })
     .getByRole('link', { name: 'Approach' })

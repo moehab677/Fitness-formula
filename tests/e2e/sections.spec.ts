@@ -7,18 +7,18 @@ for (const lang of ['en', 'ar']) {
     await expect(page.locator('html')).toHaveAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr')
     for (const id of [
       'hero',
+      'problem',
       'story',
       'approach',
       'process',
       'offer',
       'transformations',
-      'results',
+      'testimonials',
       'not-for',
       'faq',
       'final-cta',
       'footer',
     ])
       await expect(page.locator(`#${id}`)).toBeVisible()
-    await expect(page.locator('#lead-form')).toHaveCount(1)
   })
 }

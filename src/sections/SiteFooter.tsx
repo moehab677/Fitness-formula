@@ -1,49 +1,63 @@
 import { useCopy } from '../i18n/useCopy'
 import { Icon } from '../components/Icon'
+import { LanguageSwitcher } from '../components/LanguageSwitcher'
 
+const bookingFormUrl = 'https://tally.so/r/VL2v1g'
+
+// Footer (reference): wordmark + language, WhatsApp concierge row, two-column directory and
+// the editorial copyright line.
 export function SiteFooter() {
   const copy = useCopy()
+  const links: [string, string][] = [
+    ['#story', copy.nav.story],
+    ['#approach', copy.nav.approach],
+    ['#process', copy.nav.process],
+    ['#offer', copy.nav.offer],
+    ['#transformations', copy.nav.transformations],
+    [bookingFormUrl, copy.footer.bookingLabel],
+  ]
   return (
-    <footer id="footer" className="footer-band">
-      <div className="container-canvas">
-        <div className="foot">
-          <div>
-            <a
-              href="#hero"
-              className="brand-wordmark mb-[14px] flex items-center gap-[12px] text-ink"
-            >
-              <span className="brand-mark text-headline-sm text-on-accent" aria-hidden="true">
-                <Icon name="dumbbell" />
-              </span>
-              <span>{copy.nav.wordmark}</span>
-            </a>
-            <p className="mt-[14px] max-w-[420px] text-[15px] leading-[1.65] text-muted">
-              © 2026 The Fitness Formula.
-            </p>
-          </div>
-          <div className="flex flex-col items-end gap-[22px]">
-            <div className="social">
-              <a href="https://wa.me/" aria-label="WhatsApp">
-                <Icon name="whatsapp" />
-              </a>
-            </div>
-            {/* <nav aria-label="Footer" className="flinks">
-                <a href="#approach">Approach</a>
-                <a href="#offer">Pricing</a>
-                <a href="#transformations">Transformations</a>
-                <a href="https://wa.me/">WhatsApp concierge</a>
-              </nav> */}
-          </div>
+    <footer id="footer" className="footer">
+      <div className="wrap">
+        <div className="footer-top">
+          <a href="#hero" className="brand">
+            <span className="brand-dot" aria-hidden="true" />
+            <span>{copy.nav.wordmark}</span>
+          </a>
+          <LanguageSwitcher variant="segmented" />
         </div>
-        <div className="legal w-full flex justify-center">
-          <span>
-            Developed By{' '}
-            <span className=" gematic hover:text-ink-hover">
-              <a href="https://www.instagram.com/gematic.dev/" className="gematic">
-                Gematic
-              </a>
+        <div className="footer-mid">
+          <a className="concierge" href="https://wa.me/">
+            <span>
+              <span className="ico" aria-hidden="true">
+                <Icon name="whatsapp" />
+              </span>
+              <span className="t-label-sm caps">{copy.footer.whatsappLabel}</span>
             </span>
-          </span>
+            <Icon name="north-east" />
+          </a>
+          <nav aria-label={copy.footer.copyright} className="footer-links t-label-sm caps">
+            {links.map(([href, label]) => (
+              <a key={href} href={href}>
+                {label}
+              </a>
+            ))}
+          </nav>
+        </div>
+        <div className="footer-legal">
+          <p>
+            © 2026 {copy.footer.copyright}. {copy.footer.tagline}
+          </p>
+          <p>
+            Developed by{' '}
+            <a
+              href="https://www.instagram.com/gematic.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gematic
+            </a>
+          </p>
         </div>
       </div>
     </footer>
