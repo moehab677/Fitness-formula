@@ -3,7 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 /* t-hero */
-/* caps */
+/* brand */
+/* brand-dot */
 /* Self-hosted fonts (subset by scripts/subset-fonts.mjs). */
 @font-face {
   font-family: 'Barlow Condensed';
@@ -448,9 +449,10 @@
     text-transform: uppercase;
   }
   .brand-dot {
-    width: 8px;
-    height: 8px;
+    width: 35px;
+    height: 35px;
     flex-shrink: 0;
+    border-radius: 50%;
     background: rgb(var(--color-accent));
   }
   .bar-end {
@@ -633,27 +635,28 @@
   :root[lang='en'] .hero-lead {
     line-height: 1.625;
   }
+  /* Three compact boxes (icon + word), sized to their content, not to the column. */
   .feats {
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 6px 14px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-self: flex-start;
     margin-block-end: 24px;
-    padding: 10px 16px;
-    border: 1px solid rgb(var(--color-accent) / 0.5);
-    background: rgb(var(--color-bg) / 0.6);
+    border: 1px solid rgb(var(--color-hairline));
+    background: rgb(var(--color-card));
   }
   .feat {
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-    color: rgb(var(--color-ink));
+    padding: 8px 10px;
+    text-align: center;
   }
-  .feat + .feat::before {
-    content: '';
-    width: 5px;
-    height: 5px;
-    background: rgb(var(--color-accent));
+  .feat + .feat {
+    border-inline-start: 1px solid rgb(var(--color-hairline));
+  }
+  .feat .ico {
+    font-size: 18px;
+    margin-block-end: 2px;
+  }
+  .feat-title {
+    color: rgb(var(--color-ink));
   }
   .scroll-hint {
     display: flex;
@@ -679,6 +682,16 @@
     }
     .hero-body {
       padding-block-start: 56px;
+    }
+    .feats {
+      width: max-content;
+      grid-template-columns: repeat(3, minmax(120px, auto));
+    }
+    .feat {
+      padding: 10px 20px;
+    }
+    .feat .ico {
+      font-size: 20px;
     }
   }
   @media (min-width: 1100px) {
@@ -1761,9 +1774,10 @@
   }
   .btn svg,
   .concierge > svg,
+  .feat .ico,
   .tl-node,
   .step-n,
-  .brand-dot,
+  /* .brand-dot, */
   .media img,
   .shot img {
     transition:
@@ -1799,9 +1813,11 @@
     .nav-links .nav-link:hover::after {
       transform: scaleX(1);
     }
-    .brand:hover .brand-dot {
+    /* .brand:hover
+     .brand-dot
+      {
       transform: rotate(45deg);
-    }
+    } */
 
     /* Buttons lift; the arrow nudges forward along the reading direction. */
     .btn:hover {

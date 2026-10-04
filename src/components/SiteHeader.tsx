@@ -82,7 +82,7 @@ export function SiteHeader() {
       <div className="wrap">
         <div className="bar">
           <a href="#hero" className="brand">
-            <span className="brand-dot" aria-hidden="true" />
+            <img src='/logo.png' className="brand-dot" aria-hidden="true" />
             <span>{copy.nav.wordmark}</span>
           </a>
           <nav aria-label={copy.nav.primaryLabel} className="nav-links">
