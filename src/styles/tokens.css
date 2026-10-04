@@ -16,6 +16,9 @@
   --color-on-accent: 17 17 15; /* #11110F */
   --color-danger: 186 26 26; /* #BA1A1A exclusion icons */
 
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 0.7, 0.2, 1);
+
   /* Layout */
   --canvas: 1200px;
   --pad: 20px;
@@ -27,11 +30,11 @@
   --font-body: 'Newsreader', Georgia, serif;
   --font-label: 'Space Grotesk', system-ui, sans-serif;
 
-  /* Type roles (reference mobile scale) */
-  --fs-hero: 46px;
-  --lh-hero: 48px;
-  --fs-h2: 36px;
-  --lh-h2: 40px;
+  /* Type roles (reference mobile scale; hero and h2 reduced 2026-10-04 at the client's request) */
+  --fs-hero: 34px;
+  --lh-hero: 36px;
+  --fs-h2: 28px;
+  --lh-h2: 32px;
   --fs-h-lg: 28px;
   --lh-h-lg: 32px;
   --fs-h-md: 22px;
@@ -69,10 +72,10 @@
     --pad: 32px;
     --section-pad: 80px;
     --header-h: 64px;
-    --fs-hero: 64px;
-    --lh-hero: 62px;
-    --fs-h2: 48px;
-    --lh-h2: 50px;
+    --fs-hero: 48px;
+    --lh-hero: 50px;
+    --fs-h2: 36px;
+    --lh-h2: 40px;
     --fs-h-lg: 32px;
     --lh-h-lg: 36px;
     --fs-h-md: 24px;
@@ -100,10 +103,10 @@
   :root {
     --pad: 48px;
     --section-pad: 112px;
-    --fs-hero: 88px;
-    --lh-hero: 84px;
-    --fs-h2: 64px;
-    --lh-h2: 64px;
+    --fs-hero: 64px;
+    --lh-hero: 64px;
+    --fs-h2: 48px;
+    --lh-h2: 50px;
     --fs-metric: 68px;
   }
 }

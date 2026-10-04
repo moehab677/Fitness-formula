@@ -1,7 +1,8 @@
 import { useState, useEffect, type ComponentType } from 'react'
-import { LocaleProvider, type Lang } from './i18n/LocaleContext'
+import { LocaleProvider, useLocale, type Lang } from './i18n/LocaleContext'
 import { registerCopy, useCopy } from './i18n/useCopy'
 import { registry } from './sections/registry'
+import { useReveal } from './hooks/useReveal'
 import { SkipLink } from './components/SkipLink'
 import { SiteHeader } from './components/SiteHeader'
 import { ThanksPage } from './sections/pages/ThanksPage'
@@ -41,6 +42,8 @@ const sections: Record<SectionId, ComponentType<SectionProps>> = {
 
 function Content({ route }: { route: Route }) {
   const copy = useCopy()
+  const lang = useLocale()
+  useReveal(`${lang}-${route}`)
 
   useEffect(() => {
     document.title = copy.meta.title

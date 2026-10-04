@@ -22,18 +22,44 @@
       "price": 700,
       "currency": "EGP",
       "priceLabel": {
-        "en": "/ session",
-        "ar": "/ جلسة"
+        "en": "/ 45 minutes",
+        "ar": "/ 45 دقيقة"
       },
       "note": null,
       "highlighted": false,
-      "order": 1
+      "order": 1,
+      "description": {
+        "en": "A focused session built around your goals, current routine, and biggest challenges.",
+        "ar": "جلسة مركّزة مبنية على أهدافك وروتينك الحالي وأكبر التحديات اللي بتواجهك."
+      },
+      "features": [
+        {
+          "en": "Review of your training, nutrition, activity, and current progress",
+          "ar": "مراجعة لتمرينك وأكلك ونشاطك اليومي وتقدّمك لحد دلوقتي"
+        },
+        {
+          "en": "Clear priorities based on what matters most for your goal",
+          "ar": "أولويات واضحة حسب أهم حاجة لهدفك"
+        },
+        {
+          "en": "A practical training and nutrition plan that fits your lifestyle",
+          "ar": "خطة تمرين وتغذية عملية تناسب أسلوب حياتك"
+        },
+        {
+          "en": "Specific actions to follow after the session",
+          "ar": "خطوات محددة تمشي عليها بعد الجلسة"
+        },
+        {
+          "en": "Guidance on how to track progress and know when to adjust",
+          "ar": "إزاي تتابع تقدمك وتعرف إمتى تعدّل"
+        }
+      ]
     },
     {
       "id": "four-session-bundle",
       "name": {
-        "en": "4 sessions",
-        "ar": "4 جلسات"
+        "en": "4 consultations",
+        "ar": "4 استشارات"
       },
       "duration": {
         "minutes": 45,
@@ -51,27 +77,32 @@
         "ar": "وفّر 800 جنيه"
       },
       "highlighted": true,
-      "order": 2
+      "order": 2,
+      "description": {
+        "en": "Use the sessions whenever you need a review, adjustment, or further guidance.",
+        "ar": "استخدم الجلسات وقت ما تحتاج مراجعة أو تعديل أو توجيه أكتر."
+      },
+      "features": []
     }
   ],
   "terms": {
     "en": "No subscription. No long-term commitment.",
-    "ar": "من غير اشتراك شهري أو التزام طويل المدى."
+    "ar": "من غير اشتراك ومن غير التزام طويل المدى."
   },
   "guarantee": {
     "title": {
       "en": "100% Money-Back Guarantee",
-      "ar": "ضمان استرداد المبلغ بالكامل"
+      "ar": "ضمان استرداد فلوسك 100%"
     },
     "description": {
-      "en": "If you don't feel the session was valuable, you get your money back. No questions asked.",
-      "ar": "لو حسّيت إن الاستشارة ماقدّمتش لك قيمة، تقدر تسترد المبلغ بالكامل. من غير ما تحتاج تبرر قرارك."
+      "en": "If you finish your first consultation and don't feel it gave you real value, you get your money back. No questions asked.",
+      "ar": "لو خلّصت أول استشارة وحسّيت إنها ماقدّمتلكش قيمة حقيقية، فلوسك بترجعلك. من غير أي أسئلة."
     }
   },
   "cta": {
     "label": {
-      "en": "BOOK A SESSION",
-      "ar": "احجز جلسة"
+      "en": "Book a Free 15-min Call",
+      "ar": "احجز مكالمة 15 دقيقة مجانية"
     },
     "destination": "booking",
     "style": "primary"

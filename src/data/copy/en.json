@@ -55,32 +55,32 @@
     },
     "problem": {
       "label": "The problem",
-      "heading": "Busy life. Good intentions.",
-      "accent": "No clear strategy.",
-      "lead": "The problem is usually not that you don't try hard enough. It's that you don't have a clear fitness strategy that fits your actual life, and that you can sustain.",
+      "heading": "Busy Life. Good Intentions.",
+      "accent": "No Clear Strategy.",
+      "lead": "You know fitness matters. The challenge is making it work around everything else.",
       "itemLabel": "Problem",
       "items": [
         {
           "tag": "Limited time",
-          "title": "No time to do it all",
-          "body": "Work, family and everything in between leave little room for long workouts or complicated meal plans."
+          "title": "Limited Time",
+          "body": "Work, family and daily responsibilities often push training and nutrition down the priority list."
         },
         {
           "tag": "Start & stop",
-          "title": "Always starting over",
-          "body": "A new diet, a new program, a fresh start every Monday, then a busy week or a trip sends you back to square one."
+          "title": "Constantly Starting Over",
+          "body": "You start strong, life gets busy, and the routine disappears. Then the cycle repeats."
         },
         {
-          "tag": "Mixed advice",
-          "title": "Too much conflicting advice",
-          "body": "Every source says something different about training and nutrition, so it's hard to know what actually works for you."
+          "tag": "Too much info",
+          "title": "Too Much Information",
+          "body": "There’s so much fitness advice out there, it’s hard to know what actually works for you."
         }
       ]
     },
     "story": {
       "label": "My story",
-      "heading": "Consistency beats",
-      "accent": "intensity.",
+      "heading": "My Story",
+      "accent": "",
       "lead": "I believe fitness can change far more than the way you look. For me, training changed my confidence, energy, productivity, and how I show up in everyday life. But balancing fitness with a demanding career and family taught me something even more important:",
       "body": [
         "For me, training changed my confidence, energy, productivity, and how I show up in everyday life. But balancing fitness with a demanding career and family taught me something even more important:",
@@ -88,10 +88,11 @@
       ],
       "highlight": "Consistency beats intensity.",
       "mission": "That's why I started coaching: to help busy people build a stronger, healthier body in a way that actually fits their life.",
+      "missionHighlight": "I started coaching",
       "stats": [
         { "label": "Years training", "value": "5+ y", "detail": "Training Experience" },
         { "label": "Years coaching", "value": "40+", "detail": "Clients Coached" },
-        { "label": "Clients coached", "value": "98.2%", "detail": "Client Retention" }
+        { "label": "Clients coached", "value": "98%", "detail": "Client Retention" }
       ],
       "credentials": [],
       "alt": "Coach Mostafa Kheder",
@@ -100,16 +101,16 @@
     },
     "approach": {
       "label": "Coaching approach",
-      "heading": "Your body gives us data.",
-      "accent": "I use it to build the plan.",
-      "lead": "Measure, plan, act, learn and adjust.",
+      "heading": "My Approach",
+      "accent": "",
+      "lead": "",
       "stepLabel": "Step"
     },
     "process": {
       "label": "How coaching works",
       "heading": "How coaching works",
       "accent": "",
-      "lead": "A practical plan built around your goals and schedule.",
+      "lead": "",
       "alt": "Coach Mostafa Kheder during a session",
       "tag": "How coaching works",
       "stepTags": [
@@ -123,8 +124,10 @@
       "label": "Pricing & offer",
       "heading": "Simple,",
       "accent": "Flexible Pricing",
-      "bundleHeading": "Want more regular support?",
-      "termsNote": "Book another session only when you need one."
+      "bundleHeading": "Want Ongoing Support?",
+      "includesLabel": "What You Get",
+      "notSureHeading": "Not sure what you need?",
+      "notSureBody": "Start with a free 15-minute call."
     },
     "transformations": {
       "label": "Transformation stories",
@@ -195,9 +198,9 @@
     },
     "finalCta": {
       "label": "Initiation · System active",
-      "heading": "Ready to calibrate",
-      "accent": "your system?",
-      "reassurance": "Strictly limited coaching seats. Secure your baseline diagnostic today and replace physical exhaustion with athletic longevity.",
+      "heading": "Ready to Build a System",
+      "accent": "That Works for You?",
+      "reassurance": "Tell me a little about your goals and what's currently getting in the way. We'll start with a free 15-minute call and see whether I can help.",
       "formHeading": "Tell me about your goals"
     },
     "footer": {

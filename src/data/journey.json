@@ -10,12 +10,12 @@
       "id": "free-assessment",
       "stepNumber": "01",
       "title": {
-        "en": "Start with a free assessment",
-        "ar": "تقييم مبدئي مجاني"
+        "en": "Book your free 15-minute call",
+        "ar": "احجز مكالمتك المجانية (15 دقيقة)"
       },
       "description": {
-        "en": "Book a quick call so I can understand your goals, what you're struggling with and where you need support.",
-        "ar": "مكالمة قصيرة أفهم فيها أهدافك، والتحديات الحالية، وإيه اللي محتاج تركيز في المرحلة الجاية."
+        "en": "I understand your goal, current situation and biggest challenge.",
+        "ar": "بفهم هدفك، ووضعك الحالي، وأكبر تحدي قدامك."
       },
       "order": 1
     },
@@ -23,12 +23,12 @@
       "id": "choose-next-step",
       "stepNumber": "02",
       "title": {
-        "en": "Identify what matters most",
-        "ar": "نحدد الحل المناسب"
+        "en": "See if we're a good fit",
+        "ar": "نشوف لو مناسبين لبعض"
       },
       "description": {
-        "en": "If I can help, we'll identify the areas that need the most attention and what we should focus on during your consultation.",
-        "ar": "لو أقدر أساعدك، بنحدد الجوانب اللي محتاجة اهتمام أكبر، وإيه اللي هنركز عليه في الاستشارة."
+        "en": "If I can help, I'll explain what I'd recommend focusing on.",
+        "ar": "لو أقدر أساعدك، هقولك إيه اللي أنصحك تركز عليه."
       },
       "order": 2
     },
@@ -36,12 +36,12 @@
       "id": "build-plan",
       "stepNumber": "03",
       "title": {
-        "en": "Build your plan",
-        "ar": "خطة واضحة"
+        "en": "Book your consultation",
+        "ar": "احجز استشارتك"
       },
       "description": {
-        "en": "In your 1-to-1 online consultation, we review your training, nutrition, lifestyle and progress, then turn that into a clear, practical plan built around your goals and schedule.",
-        "ar": "في استشارتك الفردية أونلاين، بنراجع التمرين والتغذية وأسلوب حياتك وتقدمك، ونحوّل ده لخطوات عملية تناسب هدفك ووقتك."
+        "en": "That's the 45-minute paid session where the actual plan gets built.",
+        "ar": "دي الجلسة المدفوعة (45 دقيقة) اللي بنبني فيها خطتك الفعلية."
       },
       "order": 3
     },
@@ -49,12 +49,12 @@
       "id": "come-back-when-needed",
       "stepNumber": "04",
       "title": {
-        "en": "Come back when you need me",
-        "ar": "ترجع وقت ما تحتاج"
+        "en": "Implement and come back when needed",
+        "ar": "طبّق وارجع وقت ما تحتاج"
       },
       "description": {
-        "en": "No forced monthly subscription. Implement the plan and book another consultation whenever you need a review, adjustment or guidance.",
-        "ar": "ابدأ تطبّق الخطة، واحجز استشارة تانية لما تحتاج مراجعة أو تعديل أو توجيه. من غير اشتراك شهري إلزامي."
+        "en": "No forced monthly subscription.",
+        "ar": "من غير اشتراك شهري إلزامي."
       },
       "order": 4
     }

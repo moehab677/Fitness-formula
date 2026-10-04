@@ -70,7 +70,7 @@
       "sourceLanguage": "en",
       "languages": ["en", "ar"],
       "featured": false,
-      "order": 3,
+      "order": 5,
       "images": [
         {
           "source": "design/stitch/testimonials/3.jpg",
@@ -96,7 +96,7 @@
       "sourceLanguage": "en",
       "languages": ["en", "ar"],
       "featured": false,
-      "order": 4,
+      "order": 6,
       "images": [
         {
           "source": "design/stitch/testimonials/4.jpg",
@@ -122,7 +122,7 @@
       "sourceLanguage": "ar",
       "languages": ["ar", "en"],
       "featured": false,
-      "order": 5,
+      "order": 3,
       "images": [
         {
           "source": "design/stitch/testimonials/5.jpg",
@@ -149,7 +149,7 @@
       "sourceLanguage": "ar",
       "languages": ["ar", "en"],
       "featured": false,
-      "order": 6,
+      "order": 4,
       "images": [
         {
           "source": "design/stitch/testimonials/6.jpg",

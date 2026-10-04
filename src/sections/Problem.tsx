@@ -9,13 +9,13 @@ export function Problem() {
     <Section id="problem">
       <SectionHeader id="problem" heading={t.heading} accent={t.accent} lead={t.lead} />
       <ul className="stack grid-3">
-        {t.items.map((item, index) => (
+        {t.items.map((item) => (
           <li key={item.title} className="box reveal">
             <div className="row-top">
-              <span className="t-label-sm caps acc">
+              {/* <span className="t-label-sm caps acc">
                 {t.itemLabel} {String(index + 1).padStart(2, '0')}
-              </span>
-              <span className="tag t-label-sm caps">{item.tag}</span>
+              </span> */}
+              {/* <span className="tag t-label-sm caps">{item.tag}</span> */}
             </div>
             <h3 className="t-h-sm caps">{item.title}</h3>
             <p className="t-body-sm">{item.body}</p>

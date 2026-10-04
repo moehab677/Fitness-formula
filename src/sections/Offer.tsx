@@ -8,7 +8,7 @@ import { Section } from './Section'
 const bookingFormUrl = 'https://tally.so/r/VL2v1g'
 
 // Pricing & offer (reference): heading + session pill, the standard card, the solid accent
-// bundle card, the two trust rows and one full-width booking button.
+// bundle card, the guarantee row, the "not sure" prompt and one full-width free-call button.
 export function Offer() {
   const copy = useCopy()
   const lang = useLocale()
@@ -37,13 +37,6 @@ export function Offer() {
       </div>
       <ul className="trust">
         <li className="reveal">
-          <Icon name="check-circle" />
-          <div>
-            <h3 className="t-label-sm caps">{pricing.terms[lang]}</h3>
-            <p className="trust-desc">{t.termsNote}</p>
-          </div>
-        </li>
-        <li className="reveal">
           <Icon name="shield" />
           <div>
             <h3 className="t-label-sm caps">{pricing.guarantee.title[lang]}</h3>
@@ -51,6 +44,10 @@ export function Offer() {
           </div>
         </li>
       </ul>
+      <div className="offer-not-sure reveal">
+        <h3 className="t-h-sm caps">{t.notSureHeading}</h3>
+        <p className="t-body-sm">{t.notSureBody}</p>
+      </div>
       <a href={bookingFormUrl} data-source="offer" className="btn btn-p btn-lg offer-cta">
         <span>{pricing.cta.label[lang]}</span>
         <Icon name="arrow" />

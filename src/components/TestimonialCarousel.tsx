@@ -2,10 +2,16 @@ import { useCallback, useEffect, useRef, useState, type CSSProperties, type Reac
 import { useCopy } from '../i18n/useCopy'
 import { useLocale } from '../i18n/LocaleContext'
 import { useCarouselDrag } from '../hooks/useCarouselDrag'
+import testimonials from '../data/testimonials.json'
 import { Icon } from './Icon'
 import { ResponsiveImage } from './ResponsiveImage'
 
-const count = 8
+// Slides follow the `order` field in testimonials.json (WhatsApp messages first, then the
+// Facebook reviews), so reordering is a data change.
+const shots = [...testimonials.items]
+  .sort((a, b) => a.order - b.order)
+  .flatMap((item) => item.images.map((image) => image.assetKey))
+const count = shots.length
 const perView = (width: number) => (width < 721 ? 1 : width < 1100 ? 2 : 3)
 
 export function TestimonialCarousel({ header }: { header: ReactNode }) {
@@ -79,16 +85,16 @@ export function TestimonialCarousel({ header }: { header: ReactNode }) {
           ref={trackRef}
           style={{ '--i': index, '--per': per } as CSSProperties}
         >
-          {Array.from({ length: count }, (_, i) => (
+          {shots.map((assetKey, i) => (
             <figure
-              key={i}
+              key={assetKey}
               className="shot"
               aria-label={t.slideLabel
                 .replace('{n}', String(i + 1))
                 .replace('{total}', String(count))}
             >
               <ResponsiveImage
-                assetKey={`testimonial-${i + 1}`}
+                assetKey={assetKey}
                 alt={t.screenshotLabel.replace('{n}', String(i + 1))}
                 sizes="(min-width: 1100px) 33vw, (min-width: 721px) 50vw, 100vw"
                 priority={i < per}

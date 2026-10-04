@@ -33,6 +33,8 @@ if (root) {
   // (`:root[lang='ar']`) and logical-property direction are active before
   // React paints.  This is a no-op when the prerendered HTML already matches.
   document.documentElement.lang = lang
+  // Enables the scripted entrances (globals.css); prerendered pages already carry it.
+  document.documentElement.classList.add('js')
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr'
 
   // Persist the detected language for the root "/" redirect script.

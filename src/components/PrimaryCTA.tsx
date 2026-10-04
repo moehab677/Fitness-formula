@@ -2,6 +2,8 @@ import { useCopy } from '../i18n/useCopy'
 import { Icon } from './Icon'
 
 const bookingFormUrl = 'https://tally.so/r/VL2v1g'
+// const whatsappLink = 'https://tally.so/r/VL2v1g'
+
 
 // Primary CTA: the reference's solid accent button with a trailing arrow. `compact` is the
 // small header version (desktop only); `menu` sits at the end of the mobile menu.
