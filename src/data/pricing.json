@@ -29,29 +29,29 @@
       "highlighted": false,
       "order": 1,
       "description": {
-        "en": "A focused session built around your goals, current routine, and biggest challenges.",
-        "ar": "جلسة مركّزة مبنية على أهدافك وروتينك الحالي وأكبر التحديات اللي بتواجهك."
+        "en": "We use the session to understand where you are now, what’s getting in the way, and what needs to change.",
+        "ar": "بنستخدم الجلسة عشان نفهم إنت فين دلوقتي، إيه اللي معطّلك، وإيه اللي محتاج يتغيّر."
       },
       "features": [
         {
-          "en": "Review of your training, nutrition, activity, and current progress",
-          "ar": "مراجعة لتمرينك وأكلك ونشاطك اليومي وتقدّمك لحد دلوقتي"
+          "en": "Clear priorities for your goal",
+          "ar": "أولويات واضحة لهدفك"
         },
         {
-          "en": "Clear priorities based on what matters most for your goal",
-          "ar": "أولويات واضحة حسب أهم حاجة لهدفك"
+          "en": "A practical training approach",
+          "ar": "أسلوب تمرين عملي"
         },
         {
-          "en": "A practical training and nutrition plan that fits your lifestyle",
-          "ar": "خطة تمرين وتغذية عملية تناسب أسلوب حياتك"
+          "en": "Nutrition guidance that fits your routine",
+          "ar": "توجيه غذائي يناسب روتينك"
         },
         {
-          "en": "Specific actions to follow after the session",
-          "ar": "خطوات محددة تمشي عليها بعد الجلسة"
+          "en": "Simple actions to start implementing right away",
+          "ar": "خطوات بسيطة تبدأ تطبّقها على طول"
         },
         {
-          "en": "Guidance on how to track progress and know when to adjust",
-          "ar": "إزاي تتابع تقدمك وتعرف إمتى تعدّل"
+          "en": "A clear way to track progress and know when something needs adjusting",
+          "ar": "طريقة واضحة تتابع بيها تقدّمك وتعرف إمتى محتاج تعدّل حاجة"
         }
       ]
     },
@@ -79,8 +79,8 @@
       "highlighted": true,
       "order": 2,
       "description": {
-        "en": "Use the sessions whenever you need a review, adjustment, or further guidance.",
-        "ar": "استخدم الجلسات وقت ما تحتاج مراجعة أو تعديل أو توجيه أكتر."
+        "en": "Use the sessions whenever you need a review, adjustment, or help getting back on track.",
+        "ar": "استخدم الجلسات وقت ما تحتاج مراجعة أو تعديل أو مساعدة ترجع بيها على الطريق."
       },
       "features": []
     }
@@ -91,12 +91,12 @@
   },
   "guarantee": {
     "title": {
-      "en": "100% Money-Back Guarantee",
-      "ar": "ضمان استرداد فلوسك 100%"
+      "en": "Money-Back Guarantee",
+      "ar": "ضمان استرداد فلوسك"
     },
     "description": {
-      "en": "If you finish your first consultation and don't feel it gave you real value, you get your money back. No questions asked.",
-      "ar": "لو خلّصت أول استشارة وحسّيت إنها ماقدّمتلكش قيمة حقيقية، فلوسك بترجعلك. من غير أي أسئلة."
+      "en": "If you finish your first consultation and don’t feel it gave you real value, I’ll refund your money. No questions asked.",
+      "ar": "لو خلّصت أول استشارة وحسّيت إنها ماقدّمتلكش قيمة حقيقية، هرجّعلك فلوسك. من غير أي أسئلة."
     }
   },
   "cta": {

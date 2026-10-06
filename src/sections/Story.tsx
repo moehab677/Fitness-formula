@@ -3,7 +3,7 @@ import { Icon } from '../components/Icon'
 import { ResponsiveImage } from '../components/ResponsiveImage'
 
 // 03 — My story (reference): photo fading into the page, heading, lead, accent-bordered
-// box with the guiding principle, the story text, mission line with the 2px accent rule, and three stat chips. From 1100px the
+// box with the guiding principle, the story text, mission line with the 2px accent rule, and the stat chips. From 1100px the
 // photo sits beside the copy.
 export function Story() {
   const t = useCopy().sections.story

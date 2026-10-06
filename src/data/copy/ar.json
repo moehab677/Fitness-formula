@@ -89,8 +89,7 @@
       "highlight": "الاستمرار أهم من الشدة.",
       "stats": [
         { "label": "Years training", "value": "5+ y", "detail": "خبرة تدريبية" },
-        { "label": "Years coaching", "value": "40+", "detail": "عميل متدرب" },
-        { "label": "Clients coached", "value": "98%", "detail": "الاحتفاظ بالعملاء" }
+        { "label": "Years coaching", "value": "40+", "detail": "عميل متدرب" }
       ],
       "mission": "وعشان كده بدأت الـCoaching: عشان أساعد الناس المشغولة يبنوا جسم أقوى وصحة أحسن، بطريقة تناسب حياتهم فعلًا.",
       "missionHighlight": "بدأت الـCoaching",
@@ -119,9 +118,9 @@
       "label": "الأسعار والعرض",
       "heading": "أسعار واضحة.",
       "accent": "ومرونة تناسبك.",
-      "bundleHeading": "عايز متابعة مستمرة؟",
-      "includesLabel": "هتاخد إيه؟",
-      "notSureHeading": "مش متأكد محتاج إيه؟",
+      "bundleHeading": "محتاج دعم أكتر؟",
+      "includesLabel": "هتخرج من الجلسة بـ:",
+      "notSureHeading": "مش متأكد إذا كان ده مناسب ليك؟",
       "notSureBody": "ابدأ بمكالمة مجانية 15 دقيقة."
     },
     "transformations": {

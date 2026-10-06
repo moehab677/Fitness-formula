@@ -1,9 +1,8 @@
+import { WHATSAPP_BOOKING_URL } from '../lib/whatsapp'
 import { useCopy } from '../i18n/useCopy'
 import { Icon } from './Icon'
 
-const bookingFormUrl = 'https://tally.so/r/VL2v1g'
-// const whatsappLink = 'https://tally.so/r/VL2v1g'
-
+const bookingFormUrl = WHATSAPP_BOOKING_URL
 
 // Primary CTA: the reference's solid accent button with a trailing arrow. `compact` is the
 // small header version (desktop only); `menu` sits at the end of the mobile menu.
@@ -20,6 +19,8 @@ export function PrimaryCTA({
   return (
     <a
       href={bookingFormUrl}
+      target="_blank"
+      rel="noopener noreferrer"
       data-source={source}
       className={`btn btn-p ${compact ? 'btn-sm' : ''} ${className}`}
     >

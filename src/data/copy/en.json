@@ -91,8 +91,7 @@
       "missionHighlight": "I started coaching",
       "stats": [
         { "label": "Years training", "value": "5+ y", "detail": "Training Experience" },
-        { "label": "Years coaching", "value": "40+", "detail": "Clients Coached" },
-        { "label": "Clients coached", "value": "98%", "detail": "Client Retention" }
+        { "label": "Years coaching", "value": "40+", "detail": "Clients Coached" }
       ],
       "credentials": [],
       "alt": "Coach Mostafa Kheder",
@@ -124,9 +123,9 @@
       "label": "Pricing & offer",
       "heading": "Simple,",
       "accent": "Flexible Pricing",
-      "bundleHeading": "Want Ongoing Support?",
-      "includesLabel": "What You Get",
-      "notSureHeading": "Not sure what you need?",
+      "bundleHeading": "Need More Support?",
+      "includesLabel": "You’ll leave with:",
+      "notSureHeading": "Not sure if this is right for you?",
       "notSureBody": "Start with a free 15-minute call."
     },
     "transformations": {

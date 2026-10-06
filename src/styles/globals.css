@@ -601,7 +601,8 @@
   .hero .media {
     order: 2;
     height: auto;
-    max-height: 640px;
+    /* Phones: crop the bottom of the portrait (legs) so the photo stays short. */
+    max-height: 440px;
     margin-block-start: -150px;
   }
   .hero .media img {
@@ -862,7 +863,9 @@
   }
   .chips {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    /* One equal column per stat, so the chips always share the full row. */
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
     gap: 8px;
   }
   .chip {

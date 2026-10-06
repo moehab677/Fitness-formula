@@ -1,3 +1,4 @@
+import { WHATSAPP_BOOKING_URL } from '../lib/whatsapp'
 import pricing from '../data/pricing.json'
 import { useCopy } from '../i18n/useCopy'
 import { useLocale } from '../i18n/LocaleContext'
@@ -5,7 +6,7 @@ import { Icon } from '../components/Icon'
 import { PricingOption } from '../components/PricingOption'
 import { Section } from './Section'
 
-const bookingFormUrl = 'https://tally.so/r/VL2v1g'
+const bookingFormUrl = WHATSAPP_BOOKING_URL
 
 // Pricing & offer (reference): heading + session pill, the standard card, the solid accent
 // bundle card, the guarantee row, the "not sure" prompt and one full-width free-call button.
@@ -48,7 +49,13 @@ export function Offer() {
         <h3 className="t-h-sm caps">{t.notSureHeading}</h3>
         <p className="t-body-sm">{t.notSureBody}</p>
       </div>
-      <a href={bookingFormUrl} data-source="offer" className="btn btn-p btn-lg offer-cta">
+      <a
+        href={bookingFormUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-source="offer"
+        className="btn btn-p btn-lg offer-cta"
+      >
         <span>{pricing.cta.label[lang]}</span>
         <Icon name="arrow" />
       </a>

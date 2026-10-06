@@ -1,8 +1,9 @@
+import { WHATSAPP_BOOKING_URL } from '../lib/whatsapp'
 import { useCopy } from '../i18n/useCopy'
 import { Icon } from '../components/Icon'
 import { LanguageSwitcher } from '../components/LanguageSwitcher'
 
-const bookingFormUrl = 'https://tally.so/r/VL2v1g'
+const bookingFormUrl = WHATSAPP_BOOKING_URL
 
 // Footer (reference): wordmark + language, WhatsApp concierge row, two-column directory and
 // the editorial copyright line.
@@ -11,9 +12,9 @@ export function SiteFooter() {
   const links: [string, string][] = [
     ['#story', copy.nav.story],
     ['#approach', copy.nav.approach],
+    ['#transformations', copy.nav.transformations],
     ['#process', copy.nav.process],
     ['#offer', copy.nav.offer],
-    ['#transformations', copy.nav.transformations],
     [bookingFormUrl, copy.footer.bookingLabel],
   ]
   return (
@@ -27,7 +28,7 @@ export function SiteFooter() {
           <LanguageSwitcher variant="segmented" />
         </div>
         <div className="footer-mid">
-          <a className="concierge" href="https://wa.me/">
+          <a className="concierge" href={bookingFormUrl} target="_blank" rel="noopener noreferrer">
             <span>
               <span className="ico" aria-hidden="true">
                 <Icon name="whatsapp" />

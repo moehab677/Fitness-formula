@@ -18,8 +18,8 @@ export function SiteHeader() {
     ['story', copy.nav.story],
     ['approach', copy.nav.approach],
     // ['process', copy.nav.process],
-    ['offer', copy.nav.offer],
     ['transformations', copy.nav.transformations],
+    ['offer', copy.nav.offer],
   ]
   const linkList = links.map(([id, label]) => (
     <a key={id} href={`#${id}`} onClick={() => setMenuOpen(false)} className="nav-link">
@@ -82,7 +82,7 @@ export function SiteHeader() {
       <div className="wrap">
         <div className="bar">
           <a href="#hero" className="brand">
-            <img src='/logo.png' className="brand-dot" aria-hidden="true" />
+            <img src="/logo.png" className="brand-dot" aria-hidden="true" />
             <span>{copy.nav.wordmark}</span>
           </a>
           <nav aria-label={copy.nav.primaryLabel} className="nav-links">

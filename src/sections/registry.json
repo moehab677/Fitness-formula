@@ -21,22 +21,22 @@
   },
   {
     "index": 5,
-    "id": "process",
-    "ground": "bg"
-  },
-  {
-    "index": 6,
-    "id": "offer",
-    "ground": "bg"
-  },
-  {
-    "index": 7,
     "id": "transformations",
     "ground": "bg"
   },
   {
-    "index": 8,
+    "index": 6,
     "id": "testimonials",
+    "ground": "bg"
+  },
+  {
+    "index": 7,
+    "id": "process",
+    "ground": "bg"
+  },
+  {
+    "index": 8,
+    "id": "offer",
     "ground": "bg"
   },
   {
