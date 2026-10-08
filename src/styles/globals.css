@@ -603,7 +603,7 @@
     height: auto;
     /* Phones: crop the bottom of the portrait (legs) so the photo stays short. */
     max-height: 440px;
-    margin-block-start: -150px;
+    margin-block-start: -80px;
   }
   .hero .media img {
     height: auto;
@@ -613,8 +613,8 @@
     background: linear-gradient(
       to bottom,
       rgb(var(--color-bg)),
-      rgb(var(--color-bg) / 0.35) 30%,
-      transparent 50%,
+      rgb(var(--color-bg) / 0.15) 20%,
+      transparent 45%,
       rgb(var(--color-bg) / 0.6) 82%,
       rgb(var(--color-bg))
     );
@@ -1054,22 +1054,26 @@
   }
   .tier-top {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    gap: 12px;
+    gap: 8px;
     margin-block-end: 8px;
   }
   .tier-price {
-    font-size: 32px;
+    font-size: clamp(24px, 6vw, 32px);
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
   }
   .tier-price small {
     margin-inline-start: 4px;
     color: rgb(var(--color-muted));
     font-family: var(--font-label);
-    font-size: 14px;
+    font-size: clamp(10px, 2.5vw, 14px);
     font-weight: 600;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
   }
   .tier-desc {
     margin-block-end: 12px;
@@ -1658,6 +1662,15 @@
     text-transform: uppercase;
   }
   .footer-legal a {
+    color: rgb(var(--color-accent));
+  }
+  .footer-whatsapp {
+    font-size: 22px;
+    color: rgb(var(--color-muted));
+    transition: color 0.15s;
+  }
+  .footer-whatsapp:hover,
+  a:hover .footer-whatsapp {
     color: rgb(var(--color-accent));
   }
   @media (min-width: 721px) {

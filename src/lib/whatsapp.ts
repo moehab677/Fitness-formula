@@ -8,4 +8,4 @@ export function normalizeWhatsapp(raw: string): string | null {
 }
 
 // Every booking CTA opens a WhatsApp chat with the coach (01144146409).
-export const WHATSAPP_BOOKING_URL = 'https://wa.me/201144146409'
+export const WHATSAPP_BOOKING_URL = 'https://wa.me/201112748970'

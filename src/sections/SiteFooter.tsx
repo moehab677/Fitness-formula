@@ -22,10 +22,13 @@ export function SiteFooter() {
       <div className="wrap">
         <div className="footer-top">
           <a href="#hero" className="brand">
-            <span className="brand-dot" aria-hidden="true" />
+            <img src="/logo.png" className="brand-dot" aria-hidden="true" />
             <span>{copy.nav.wordmark}</span>
           </a>
           <LanguageSwitcher variant="segmented" />
+          <a href="https://www.facebook.com/share/18XSee6oXE/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <Icon name="facebook" className="footer-whatsapp" />
+          </a>
         </div>
         <div className="footer-mid">
           <a className="concierge" href={bookingFormUrl} target="_blank" rel="noopener noreferrer">
